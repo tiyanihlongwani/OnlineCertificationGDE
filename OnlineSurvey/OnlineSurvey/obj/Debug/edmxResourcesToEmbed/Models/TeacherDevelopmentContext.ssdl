@@ -1,0 +1,1880 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TeacherDevelopment1V2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Addresses">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StreetName" Type="varchar" MaxLength="100" />
+    <Property Name="SuburbName" Type="varchar" MaxLength="50" />
+    <Property Name="PostalCode" Type="smallint" />
+    <Property Name="PostalAddress" Type="varchar" MaxLength="100" />
+    <Property Name="PostalAddressNumber" Type="varchar" MaxLength="50" />
+    <Property Name="PostalAddressSuburbName" Type="nchar" MaxLength="10" />
+    <Property Name="PostalAddressCode" Type="smallint" />
+    <Property Name="HouseNumber" Type="varchar" MaxLength="10" />
+    <Property Name="BuildingName" Type="varchar" MaxLength="100" />
+    <Property Name="TraineeId" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="LastUpdatedBy" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime2" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ApprovalRoute">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FId" Type="int" Nullable="false" />
+    <Property Name="Approval1" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Approval2" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LevelId" Type="int" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime2" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ClaimType" Type="nvarchar(max)" />
+    <Property Name="ClaimValue" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogins">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ProviderKey" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar(max)" />
+    <Property Name="SecurityStamp" Type="nvarchar(max)" />
+    <Property Name="PhoneNumber" Type="nvarchar(max)" />
+    <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="datetime" />
+    <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Circuit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="FId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CircuitPosition">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CircuitId" Type="int" />
+    <Property Name="PositionId" Type="int" />
+  </EntityType>
+  <EntityType Name="Cluster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="FId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ClusterPosition">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClusterId" Type="int" />
+    <Property Name="PositionId" Type="int" />
+  </EntityType>
+  <EntityType Name="District">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="FId" Type="int" />
+  </EntityType>
+  <EntityType Name="DistrictPosition">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DistrictId" Type="int" />
+    <Property Name="PositionId" Type="int" />
+  </EntityType>
+  <EntityType Name="Enroll">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TraineeId" Type="int" Nullable="false" />
+    <Property Name="TrainingScheduleId" Type="int" Nullable="false" />
+    <Property Name="StatusId" Type="int" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="13" Nullable="false" />
+    <Property Name="Approver1" Type="varchar" MaxLength="50" />
+    <Property Name="Approver2" Type="varchar" MaxLength="50" />
+    <Property Name="LastUpdatedBy" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="CheckedIn" Type="bit" />
+    <Property Name="CheckedOut" Type="bit" />
+    <Property Name="CheckInDate" Type="datetime2" Precision="7" />
+    <Property Name="CheckOutDate" Type="datetime2" Precision="7" />
+    <Property Name="IntructorId" Type="nvarchar" MaxLength="128" />
+  </EntityType>
+  <EntityType Name="ErrorLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TimeStamp" Type="datetime2" Precision="7" />
+    <Property Name="ErrorLine" Type="int" />
+    <Property Name="ErrorNumber" Type="int" />
+    <Property Name="ErrorMessage" Type="varchar" MaxLength="1000" />
+    <Property Name="ErrorProcedure" Type="varchar" MaxLength="100" />
+    <Property Name="ErrorSeverity" Type="int" />
+  </EntityType>
+  <EntityType Name="Experience">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TraineeId" Type="int" Nullable="false" />
+    <Property Name="CompanyName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DateFrom" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="DateTo" Type="datetime2" Precision="7" />
+    <Property Name="CurrentPosition" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="EducationSector" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="DateCreate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="LastUpdatedBy" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'TeacherDevelopment1.dbo.Gender' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Gender">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Grade">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GradeSubject">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SubjectId" Type="int" Nullable="false" />
+    <Property Name="GradeId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'TeacherDevelopment1.dbo.ImportPostion' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="ImportPostion">
+          <Property Name="IDNUMBER" Type="nvarchar" MaxLength="255" />
+          <Property Name="POSITION" Type="float" />
+          <Property Name="NAME" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+  <EntityType Name="Level">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'TeacherDevelopment1.dbo.Masterlist' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Masterlist">
+          <Property Name="F1" Type="nvarchar" MaxLength="255" />
+          <Property Name="F2" Type="float" />
+          <Property Name="F3" Type="nvarchar" MaxLength="255" />
+          <Property Name="F4" Type="nvarchar" MaxLength="255" />
+          <Property Name="F5" Type="nvarchar" MaxLength="255" />
+          <Property Name="F6" Type="nvarchar" MaxLength="255" />
+          <Property Name="F7" Type="nvarchar" MaxLength="255" />
+          <Property Name="F8" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'TeacherDevelopment1.dbo.Nationality' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Nationality">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Notification">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="TimeStamp" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="Message" Type="varchar" MaxLength="1000" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Partners">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="FId" Type="int" />
+  </EntityType>
+  <EntityType Name="PartnersPosition">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PartnersId" Type="int" />
+    <Property Name="PositionId" Type="int" />
+  </EntityType>
+  <EntityType Name="Phase">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar(max)" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+    <Property Name="UpdateDate" Type="datetime2" Precision="7" />
+  </EntityType>
+  <EntityType Name="PhaseSubject">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SubjectId" Type="int" Nullable="false" />
+    <Property Name="PhaseId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Position">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Project">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="1000" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Province">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ProvincePosition">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProvinceId" Type="int" Nullable="false" />
+    <Property Name="PositionId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Qualification">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TraineeId" Type="int" Nullable="false" />
+    <Property Name="HighestQualificationId" Type="int" Nullable="false" />
+    <Property Name="OtherQualification" Type="varchar" MaxLength="100" />
+    <Property Name="YearCompleted" Type="smallint" Nullable="false" />
+    <Property Name="InstitutionId" Type="int" Nullable="false" />
+    <Property Name="OtherInstitution" Type="varchar" MaxLength="100" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="DateCreate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="LastUpdatedBy" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'TeacherDevelopment1.dbo.Race' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Race">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Region">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="FId" Type="int" />
+  </EntityType>
+  <EntityType Name="RegionPosition">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RegionId" Type="int" />
+    <Property Name="PositionId" Type="int" />
+  </EntityType>
+  <EntityType Name="ResetPassword">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ASPNetUserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ValidFrom" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ValidTo" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="Expired" Type="bit" Nullable="false" />
+    <Property Name="Code" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="School">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="FId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SchoolPosition">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SchoolId" Type="int" Nullable="false" />
+    <Property Name="PositionId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sessions">
+    <Key>
+      <PropertyRef Name="SessionId" />
+    </Key>
+    <Property Name="SessionId" Type="nvarchar" MaxLength="88" Nullable="false" />
+    <Property Name="Created" Type="datetime" Nullable="false" />
+    <Property Name="Expires" Type="datetime" Nullable="false" />
+    <Property Name="LockDate" Type="datetime" Nullable="false" />
+    <Property Name="LockCookie" Type="int" Nullable="false" />
+    <Property Name="Locked" Type="bit" Nullable="false" />
+    <Property Name="SessionItem" Type="varbinary(max)" />
+    <Property Name="Flags" Type="int" Nullable="false" />
+    <Property Name="Timeout" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TrainingStatus" Type="nvarchar" MaxLength="50" />
+    <Property Name="EnrollStatus" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Subject">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SubjectProject">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SubjectId" Type="int" Nullable="false" />
+    <Property Name="ProjectId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tbl_Personal_Details">
+    <Key>
+      <PropertyRef Name="IDNUMBER" />
+    </Key>
+    <Property Name="PERSALNO" Type="float" />
+    <Property Name="SURNAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="INITIALS" Type="nvarchar" MaxLength="255" />
+    <Property Name="FIRSTNAMES" Type="nvarchar" MaxLength="255" />
+    <Property Name="RACE" Type="nvarchar" MaxLength="255" />
+    <Property Name="GENDER" Type="nvarchar" MaxLength="255" />
+    <Property Name="SALARY_LEVEL _EMPLOYEE" Type="float" />
+    <Property Name="PAY_POINT_DESCR" Type="nvarchar" MaxLength="255" />
+    <Property Name="IDNUMBER" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="AGE" Type="float" />
+    <Property Name="DISABILITY" Type="nvarchar" MaxLength="255" />
+    <Property Name="REGION_DESCRIPTION" Type="nvarchar" MaxLength="255" />
+    <Property Name="NATIONALITY_DESCRIPTION" Type="nvarchar" MaxLength="255" />
+    <Property Name="DISTRICT" Type="nvarchar" MaxLength="255" />
+    <Property Name="POST_TYPE" Type="nvarchar" MaxLength="255" />
+    <Property Name="POST_CLASS_DESCR" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'TeacherDevelopment1.dbo.TeacherPosition' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="TeacherPosition">
+          <Property Name="IDNUMBER" Type="nvarchar" MaxLength="255" />
+          <Property Name="POSITION" Type="float" />
+          <Property Name="NAME" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+  <EntityType Name="TeacherPosition1">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDNUMBER" Type="nvarchar" MaxLength="255" />
+    <Property Name="POSITION" Type="float" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'TeacherDevelopment1.dbo.Test_Table' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Test_Table">
+          <Property Name="column1" Type="nvarchar" MaxLength="50" />
+          <Property Name="column2" Type="nvarchar" MaxLength="50" />
+          <Property Name="column3" Type="nvarchar" MaxLength="100" />
+          <Property Name="column4" Type="nvarchar" MaxLength="200" />
+          <Property Name="column5" Type="nvarchar" MaxLength="100" />
+          <Property Name="column6" Type="nvarchar" MaxLength="400" />
+          <Property Name="column7" Type="nvarchar" MaxLength="450" />
+          <Property Name="column8" Type="nvarchar" MaxLength="250" />
+          <Property Name="column9" Type="nvarchar" MaxLength="1" />
+          <Property Name="column10" Type="nvarchar" MaxLength="1" />
+          <Property Name="column11" Type="nvarchar" MaxLength="1" />
+          <Property Name="column12" Type="nvarchar" MaxLength="1" />
+          <Property Name="column13" Type="nvarchar" MaxLength="1" />
+          <Property Name="column14" Type="nvarchar" MaxLength="1" />
+          <Property Name="column15" Type="nvarchar" MaxLength="1" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'TeacherDevelopment1.dbo.Title' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Title">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Trainee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nationality" Type="int" />
+    <Property Name="IdNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PersalNumber" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Surname" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Title" Type="int" />
+    <Property Name="Initials" Type="varchar" MaxLength="5" />
+    <Property Name="Gender" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="DateOfBirth" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Age" Type="smallint" />
+    <Property Name="Race" Type="smallint" />
+    <Property Name="Language" Type="smallint" />
+    <Property Name="CellPhoneNumber" Type="varchar" MaxLength="10" />
+    <Property Name="TelephoneNumber" Type="varchar" MaxLength="10" />
+    <Property Name="EmailAddress" Type="varchar" MaxLength="50" />
+    <Property Name="SACENumber" Type="int" />
+    <Property Name="Disability" Type="int" />
+    <Property Name="DisabilityType" Type="int" />
+    <Property Name="Levels" Type="smallint" />
+    <Property Name="PositionId" Type="int" Nullable="false" />
+    <Property Name="ASPNETUserID" Type="varchar" MaxLength="128" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+    <Property Name="LastUpdatedDate" Type="datetime2" Precision="7" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="128" />
+    <Property Name="LastUpdatedBy" Type="varchar" MaxLength="128" />
+  </EntityType>
+  <EntityType Name="TraineeGradeSubject">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TraineeId" Type="int" Nullable="false" />
+    <Property Name="SubjectGradeId" Type="int" />
+  </EntityType>
+  <EntityType Name="Training">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Topic" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="PhaseSubjectId" Type="int" Nullable="false" />
+    <Property Name="SubjectProjectId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TrainingSchedule">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StartDate" Type="date" Nullable="false" />
+    <Property Name="EndDate" Type="date" Nullable="false" />
+    <Property Name="TrainingId" Type="int" Nullable="false" />
+    <Property Name="StartHour" Type="smallint" Nullable="false" />
+    <Property Name="StartMinutes" Type="smallint" Nullable="false" />
+    <Property Name="EndHour" Type="smallint" Nullable="false" />
+    <Property Name="EndMinutes" Type="smallint" Nullable="false" />
+    <Property Name="VenueId" Type="int" Nullable="false" />
+    <Property Name="StatusId" Type="int" Nullable="false" />
+    <Property Name="Duration" Type="float" />
+    <Property Name="RelatedTo" Type="nchar" MaxLength="10" />
+    <Property Name="InstructorId" Type="nvarchar" MaxLength="128" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PersalNumber" Type="varchar" MaxLength="10" />
+    <Property Name="Title" Type="int" Nullable="false" />
+    <Property Name="Initials" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Surname" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Gender" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="EmailAddress" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Cellphone" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="PositionId" Type="int" />
+    <Property Name="LevelId" Type="int" Nullable="false" />
+    <Property Name="DistrictId" Type="int" />
+    <Property Name="SchoolId" Type="int" />
+    <Property Name="AspnetUserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="LastUpdatedBy" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+    <Property Name="TelephoneNumber" Type="varchar" MaxLength="10" />
+    <Property Name="Nationality" Type="int" />
+    <Property Name="Language" Type="smallint" />
+    <Property Name="Race" Type="smallint" />
+    <Property Name="Disability" Type="int" />
+    <Property Name="DisabilityType" Type="int" />
+  </EntityType>
+  <EntityType Name="Venue">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar(max)" Nullable="false" />
+    <Property Name="Capacity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VenueSchedule">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VenueId" Type="int" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="StartDate" Type="date" Nullable="false" />
+    <Property Name="StatusId" Type="int" />
+    <Property Name="EndDate" Type="date" Nullable="false" />
+    <Property Name="TrainingScheduleId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Addresses_Addresses">
+    <End Role="Trainee" Type="Self.Trainee" Multiplicity="1" />
+    <End Role="Addresses" Type="Self.Addresses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Trainee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Addresses">
+        <PropertyRef Name="TraineeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ApprovalRoute_Level">
+    <End Role="Level" Type="Self.Level" Multiplicity="1" />
+    <End Role="ApprovalRoute" Type="Self.ApprovalRoute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Level">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ApprovalRoute">
+        <PropertyRef Name="LevelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Circuit_District">
+    <End Role="District" Type="Self.District" Multiplicity="1" />
+    <End Role="Circuit" Type="Self.Circuit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="District">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Circuit">
+        <PropertyRef Name="FId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CircuitPosition_Circuit">
+    <End Role="Circuit" Type="Self.Circuit" Multiplicity="0..1" />
+    <End Role="CircuitPosition" Type="Self.CircuitPosition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Circuit">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CircuitPosition">
+        <PropertyRef Name="CircuitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CircuitPosition_SchoolPosition">
+    <End Role="SchoolPosition" Type="Self.SchoolPosition" Multiplicity="0..1" />
+    <End Role="CircuitPosition" Type="Self.CircuitPosition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SchoolPosition">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CircuitPosition">
+        <PropertyRef Name="PositionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cluster_Circuit">
+    <End Role="Circuit" Type="Self.Circuit" Multiplicity="1" />
+    <End Role="Cluster" Type="Self.Cluster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Circuit">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cluster">
+        <PropertyRef Name="FId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClusterPosition_Cluster">
+    <End Role="Cluster" Type="Self.Cluster" Multiplicity="0..1" />
+    <End Role="ClusterPosition" Type="Self.ClusterPosition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cluster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ClusterPosition">
+        <PropertyRef Name="ClusterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClusterPosition_SchoolPosition">
+    <End Role="SchoolPosition" Type="Self.SchoolPosition" Multiplicity="0..1" />
+    <End Role="ClusterPosition" Type="Self.ClusterPosition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SchoolPosition">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ClusterPosition">
+        <PropertyRef Name="PositionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+    <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_District_Region">
+    <End Role="Region" Type="Self.Region" Multiplicity="0..1" />
+    <End Role="District" Type="Self.District" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Region">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="District">
+        <PropertyRef Name="FId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DistrictPosition_District">
+    <End Role="District" Type="Self.District" Multiplicity="0..1" />
+    <End Role="DistrictPosition" Type="Self.DistrictPosition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="District">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DistrictPosition">
+        <PropertyRef Name="DistrictId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DistrictPosition_Position">
+    <End Role="Position" Type="Self.Position" Multiplicity="0..1" />
+    <End Role="DistrictPosition" Type="Self.DistrictPosition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Position">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DistrictPosition">
+        <PropertyRef Name="PositionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Enroll_Status">
+    <End Role="Status" Type="Self.Status" Multiplicity="1" />
+    <End Role="Enroll" Type="Self.Enroll" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Enroll">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Enroll_Trainee">
+    <End Role="Trainee" Type="Self.Trainee" Multiplicity="1" />
+    <End Role="Enroll" Type="Self.Enroll" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Trainee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Enroll">
+        <PropertyRef Name="TraineeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Enroll_TrainingSchedule">
+    <End Role="TrainingSchedule" Type="Self.TrainingSchedule" Multiplicity="1" />
+    <End Role="Enroll" Type="Self.Enroll" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TrainingSchedule">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Enroll">
+        <PropertyRef Name="TrainingScheduleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Grade_Phase">
+    <End Role="Phase" Type="Self.Phase" Multiplicity="1" />
+    <End Role="Grade" Type="Self.Grade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phase">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Grade">
+        <PropertyRef Name="FId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GradeSubject_Grade">
+    <End Role="Grade" Type="Self.Grade" Multiplicity="1" />
+    <End Role="GradeSubject" Type="Self.GradeSubject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grade">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GradeSubject">
+        <PropertyRef Name="GradeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GradeSubject_Subject">
+    <End Role="Subject" Type="Self.Subject" Multiplicity="1" />
+    <End Role="GradeSubject" Type="Self.GradeSubject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GradeSubject">
+        <PropertyRef Name="SubjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Notification_AspNetUsers">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1" />
+    <End Role="Notification" Type="Self.Notification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Notification">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Partners_Level">
+    <End Role="Level" Type="Self.Level" Multiplicity="0..1" />
+    <End Role="Partners" Type="Self.Partners" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Level">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Partners">
+        <PropertyRef Name="FId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PartnersPosition_Partners">
+    <End Role="Partners" Type="Self.Partners" Multiplicity="0..1" />
+    <End Role="PartnersPosition" Type="Self.PartnersPosition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Partners">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PartnersPosition">
+        <PropertyRef Name="PartnersId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PartnersPosition_Position">
+    <End Role="Position" Type="Self.Position" Multiplicity="0..1" />
+    <End Role="PartnersPosition" Type="Self.PartnersPosition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Position">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PartnersPosition">
+        <PropertyRef Name="PositionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhaseSubject_Phase">
+    <End Role="Phase" Type="Self.Phase" Multiplicity="1" />
+    <End Role="PhaseSubject" Type="Self.PhaseSubject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phase">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PhaseSubject">
+        <PropertyRef Name="PhaseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhaseSubject_Subject">
+    <End Role="Subject" Type="Self.Subject" Multiplicity="1" />
+    <End Role="PhaseSubject" Type="Self.PhaseSubject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PhaseSubject">
+        <PropertyRef Name="SubjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Position_User">
+    <End Role="Position" Type="Self.Position" Multiplicity="0..1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Position">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="PositionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProvincePosition_Position">
+    <End Role="Position" Type="Self.Position" Multiplicity="1" />
+    <End Role="ProvincePosition" Type="Self.ProvincePosition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Position">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProvincePosition">
+        <PropertyRef Name="PositionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProvincePosition_Province">
+    <End Role="Province" Type="Self.Province" Multiplicity="1" />
+    <End Role="ProvincePosition" Type="Self.ProvincePosition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Province">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProvincePosition">
+        <PropertyRef Name="ProvinceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Qualification_Trainee">
+    <End Role="Trainee" Type="Self.Trainee" Multiplicity="1" />
+    <End Role="Qualification" Type="Self.Qualification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Trainee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Qualification">
+        <PropertyRef Name="TraineeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Region_Province">
+    <End Role="Province" Type="Self.Province" Multiplicity="0..1" />
+    <End Role="Region" Type="Self.Region" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Province">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Region">
+        <PropertyRef Name="FId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RegionPosition_Region">
+    <End Role="Region" Type="Self.Region" Multiplicity="0..1" />
+    <End Role="RegionPosition" Type="Self.RegionPosition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Region">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RegionPosition">
+        <PropertyRef Name="RegionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResetPassword_ResetPassword">
+    <End Role="ResetPassword" Type="Self.ResetPassword" Multiplicity="1" />
+    <End Role="ResetPassword1" Type="Self.ResetPassword" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="ResetPassword">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ResetPassword1">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_School_Cluster">
+    <End Role="Cluster" Type="Self.Cluster" Multiplicity="1" />
+    <End Role="School" Type="Self.School" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cluster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="School">
+        <PropertyRef Name="FId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SubjectProject_Project">
+    <End Role="Project" Type="Self.Project" Multiplicity="1" />
+    <End Role="SubjectProject" Type="Self.SubjectProject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SubjectProject">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SubjectProject_Subject">
+    <End Role="Subject" Type="Self.Subject" Multiplicity="1" />
+    <End Role="SubjectProject" Type="Self.SubjectProject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SubjectProject">
+        <PropertyRef Name="SubjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Trainee_Experience">
+    <End Role="Trainee" Type="Self.Trainee" Multiplicity="1" />
+    <End Role="Experience" Type="Self.Experience" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Trainee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Experience">
+        <PropertyRef Name="TraineeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TraineeGradeSubject_GradeSubject">
+    <End Role="GradeSubject" Type="Self.GradeSubject" Multiplicity="0..1" />
+    <End Role="TraineeGradeSubject" Type="Self.TraineeGradeSubject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GradeSubject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TraineeGradeSubject">
+        <PropertyRef Name="SubjectGradeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TraineeGradeSubject_Trainee">
+    <End Role="Trainee" Type="Self.Trainee" Multiplicity="1" />
+    <End Role="TraineeGradeSubject" Type="Self.TraineeGradeSubject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Trainee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TraineeGradeSubject">
+        <PropertyRef Name="TraineeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Training_PhaseSubject">
+    <End Role="PhaseSubject" Type="Self.PhaseSubject" Multiplicity="1" />
+    <End Role="Training" Type="Self.Training" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PhaseSubject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Training">
+        <PropertyRef Name="PhaseSubjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Training_SubjectProject">
+    <End Role="SubjectProject" Type="Self.SubjectProject" Multiplicity="1" />
+    <End Role="Training" Type="Self.Training" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SubjectProject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Training">
+        <PropertyRef Name="SubjectProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrainingSchedule_Status">
+    <End Role="Status" Type="Self.Status" Multiplicity="1" />
+    <End Role="TrainingSchedule" Type="Self.TrainingSchedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TrainingSchedule">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrainingSchedule_Training">
+    <End Role="Training" Type="Self.Training" Multiplicity="1" />
+    <End Role="TrainingSchedule" Type="Self.TrainingSchedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Training">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TrainingSchedule">
+        <PropertyRef Name="TrainingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrainingSchedule_Venue">
+    <End Role="Venue" Type="Self.Venue" Multiplicity="1" />
+    <End Role="TrainingSchedule" Type="Self.TrainingSchedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Venue">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TrainingSchedule">
+        <PropertyRef Name="VenueId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_AspNetUsers">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="AspnetUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Level">
+    <End Role="Level" Type="Self.Level" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Level">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="LevelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VenueSchedule_Status">
+    <End Role="Status" Type="Self.Status" Multiplicity="0..1" />
+    <End Role="VenueSchedule" Type="Self.VenueSchedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VenueSchedule">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VenueSchedule_TrainingSchedule">
+    <End Role="TrainingSchedule" Type="Self.TrainingSchedule" Multiplicity="1" />
+    <End Role="VenueSchedule" Type="Self.VenueSchedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TrainingSchedule">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VenueSchedule">
+        <PropertyRef Name="TrainingScheduleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VenueSchedule_Venue">
+    <End Role="Venue" Type="Self.Venue" Multiplicity="1" />
+    <End Role="VenueSchedule" Type="Self.VenueSchedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Venue">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VenueSchedule">
+        <PropertyRef Name="VenueId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="Insert_Trainee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="PersalNumber" Type="int" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="Surname" Type="varchar" Mode="In" />
+    <Parameter Name="Gender" Type="varchar" Mode="In" />
+    <Parameter Name="DateOfBirth" Type="date" Mode="In" />
+    <Parameter Name="PositionId" Type="int" Mode="In" />
+    <Parameter Name="ASPNETUserID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="up_AddPrincipalAndDeputyToApprovalRoute" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="up_Address_ByTraineeId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TraineeId" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="up_Address_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="StreetName" Type="nvarchar" Mode="In" />
+    <Parameter Name="SuburbName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PostalCode" Type="smallint" Mode="In" />
+    <Parameter Name="PostalAddress" Type="nvarchar" Mode="In" />
+    <Parameter Name="PostalAddressNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="PostalAddressSuburbName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PostalAddressCode" Type="smallint" Mode="In" />
+    <Parameter Name="HouseNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="BuildingName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_Address_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="StreetName" Type="nvarchar" Mode="In" />
+    <Parameter Name="SuburbName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PostalCode" Type="smallint" Mode="In" />
+    <Parameter Name="PostalAddress" Type="nvarchar" Mode="In" />
+    <Parameter Name="PostalAddressNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="PostalAddressSuburbName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PostalAddressCode" Type="smallint" Mode="In" />
+    <Parameter Name="HouseNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="BuildingName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_AttendanceRegister_ById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ScheduleId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="up_CheckIn_UpdateById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="CheckIn" Type="smallint" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_CheckOut_UpdateById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="CheckOut" Type="smallint" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_Count_Phases" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="up_Count_Project" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="up_Count_Users" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="up_Enroll_ById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="up_Enroll_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="UserId" Type="varchar" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_Experience_ById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="up_Experience_ByTraineeId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TraineeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="up_Experience_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="Username" Type="nvarchar" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_Experience_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TraineeId" Type="int" Mode="In" />
+    <Parameter Name="CompanyName" Type="nvarchar" Mode="In" />
+    <Parameter Name="DateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="DateTo" Type="datetime" Mode="In" />
+    <Parameter Name="CurrentPosition" Type="char" Mode="In" />
+    <Parameter Name="EducationSector" Type="char" Mode="In" />
+    <Parameter Name="Username" Type="nvarchar" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_Experience_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="CompanyName" Type="nvarchar" Mode="In" />
+    <Parameter Name="DateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="DateTo" Type="datetime" Mode="In" />
+    <Parameter Name="CurrentPosition" Type="char" Mode="In" />
+    <Parameter Name="EducationSector" Type="char" Mode="In" />
+    <Parameter Name="Username" Type="nvarchar" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_Get_Phases" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Up_GetID_FromASPUsers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="IdNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="PersalNumber" Type="int" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="Surname" Type="varchar" Mode="In" />
+    <Parameter Name="Gender" Type="varchar" Mode="In" />
+    <Parameter Name="DateOfBirth" Type="date" Mode="In" />
+    <Parameter Name="PositionId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Up_GetID_FromUsers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdNumber" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="Up_Insert_RoleID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RoleId" Type="nvarchar" Mode="In" />
+    <Parameter Name="IdNumber" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="up_Level_ByNothing" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="up_LevelType_ByLevelId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="up_Positions_ByLevelIdByLevelTypeId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="LevelId" Type="int" Mode="In" />
+    <Parameter Name="LevelTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="up_Positions_ByLevelTypeId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="up_Qaulification_ById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="up_Qaulification_ByTraineeId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TraineeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="up_Qualification_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="Username" Type="nvarchar" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_Qualification_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TraineeID" Type="int" Mode="In" />
+    <Parameter Name="HighestQualificationId" Type="int" Mode="In" />
+    <Parameter Name="OtherQualification" Type="varchar" Mode="In" />
+    <Parameter Name="YearCompleted" Type="smallint" Mode="In" />
+    <Parameter Name="InstitutionId" Type="int" Mode="In" />
+    <Parameter Name="OtherInstitution" Type="nvarchar" Mode="In" />
+    <Parameter Name="Username" Type="nvarchar" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_Qualification_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="HighestQualificationId" Type="int" Mode="In" />
+    <Parameter Name="OtherQualification" Type="varchar" Mode="In" />
+    <Parameter Name="YearCompleted" Type="smallint" Mode="In" />
+    <Parameter Name="InstitutionId" Type="int" Mode="In" />
+    <Parameter Name="OtherInstitution" Type="nvarchar" Mode="In" />
+    <Parameter Name="Username" Type="nvarchar" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_ResetPassword_BYUserIdAndCode" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="varchar" Mode="In" />
+    <Parameter Name="Code" Type="int" Mode="In" />
+  </Function>
+  <Function Name="up_ResetPassword_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="varchar" Mode="In" />
+    <Parameter Name="Code" Type="int" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_ResetPassword_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="varchar" Mode="In" />
+    <Parameter Name="Code" Type="int" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_Template" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_Trainee_ByEnrolId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EnrollId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="up_Trainee_ByIdNumber" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdNumber" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="up_Trainee_BySchoolId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SchoolId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="up_Trainee_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="IdNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="PersalNumber" Type="int" Mode="In" />
+    <Parameter Name="Title" Type="int" Mode="In" />
+    <Parameter Name="Initials" Type="varchar" Mode="In" />
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Surname" Type="nvarchar" Mode="In" />
+    <Parameter Name="Gender" Type="nvarchar" Mode="In" />
+    <Parameter Name="DateOfBirth" Type="varchar" Mode="In" />
+    <Parameter Name="PositionId" Type="int" Mode="In" />
+    <Parameter Name="Language" Type="int" Mode="In" />
+    <Parameter Name="CellPhoneNumber" Type="varchar" Mode="In" />
+    <Parameter Name="TelephoneNumber" Type="varchar" Mode="In" />
+    <Parameter Name="SACENumber" Type="int" Mode="In" />
+    <Parameter Name="Age" Type="int" Mode="In" />
+    <Parameter Name="Nationality" Type="int" Mode="In" />
+    <Parameter Name="Disability" Type="int" Mode="In" />
+    <Parameter Name="DisabilityType" Type="int" Mode="In" />
+    <Parameter Name="Race" Type="int" Mode="In" />
+    <Parameter Name="EmailAddress" Type="varchar" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_Trainee_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="IdNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="Title" Type="int" Mode="In" />
+    <Parameter Name="Initials" Type="varchar" Mode="In" />
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Surname" Type="nvarchar" Mode="In" />
+    <Parameter Name="Gender" Type="nvarchar" Mode="In" />
+    <Parameter Name="DateOfBirth" Type="varchar" Mode="In" />
+    <Parameter Name="PositionId" Type="int" Mode="In" />
+    <Parameter Name="Language" Type="int" Mode="In" />
+    <Parameter Name="CellPhoneNumber" Type="varchar" Mode="In" />
+    <Parameter Name="TelephoneNumber" Type="varchar" Mode="In" />
+    <Parameter Name="SACENumber" Type="int" Mode="In" />
+    <Parameter Name="Age" Type="int" Mode="In" />
+    <Parameter Name="Nationality" Type="int" Mode="In" />
+    <Parameter Name="Disability" Type="int" Mode="In" />
+    <Parameter Name="DisabilityType" Type="int" Mode="In" />
+    <Parameter Name="Race" Type="int" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_Trainees_ByPrincipalIdNumber" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdNumber" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="up_Training_ByUserName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Username" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="up_TrainingAwaitingApproval_ByApproverIdNumberAndId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="IdNumber" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="up_TrainingAwaitingApproval_ById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdNumber" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="up_TrainingAwaitingApproval_ByIdNumber" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdNumber" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="up_TrainingSchedule_ById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TrainingId" Type="int" Mode="In" />
+    <Parameter Name="ScheduleId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="up_TrainingSchedule_ById1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TrainingId" Type="int" Mode="In" />
+    <Parameter Name="ScheduleId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="up_TrainingSchedule_ByInstructorId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="InstructorId" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="up_TrainingSchedule_ByInstructorIdAndScheduleId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IntructorId" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="up_TrainingSchedule_ByNothing1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="up_TrainingSchedule_ByNothing2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="up_TrainingSchedule_ByScheduleId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ScheduleId" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="up_TrainingSchedule_ByTopicId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TopicId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="up_TrainingSchedule_ByTopicId1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TopicId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="up_TrainingSchedule_ByTrainingIdAndScheduleId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TrainingId" Type="int" Mode="In" />
+    <Parameter Name="ScheduleId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="up_User_ById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="up_User_ByIdNumber" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdNumber" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="up_User_ByNothing" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="up_User_ByPerIDNo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDNUMBER" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="up_User_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_User_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdNumber" Type="varchar" Mode="In" />
+    <Parameter Name="PersalNumber" Type="varchar" Mode="In" />
+    <Parameter Name="Initials" Type="varchar" Mode="In" />
+    <Parameter Name="Title" Type="int" Mode="In" />
+    <Parameter Name="TelephoneNumber" Type="varchar" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="Surname" Type="varchar" Mode="In" />
+    <Parameter Name="Gender" Type="varchar" Mode="In" />
+    <Parameter Name="EmailAddress" Type="varchar" Mode="In" />
+    <Parameter Name="CellPhoneNumber" Type="varchar" Mode="In" />
+    <Parameter Name="Nationality" Type="int" Mode="In" />
+    <Parameter Name="Language" Type="int" Mode="In" />
+    <Parameter Name="Race" Type="int" Mode="In" />
+    <Parameter Name="Disability" Type="int" Mode="In" />
+    <Parameter Name="DisabilityType" Type="int" Mode="In" />
+    <Parameter Name="CreatedById" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserId" Type="nvarchar" Mode="In" />
+    <Parameter Name="LevelId" Type="smallint" Mode="In" />
+    <Parameter Name="DistrictId" Type="int" Mode="In" />
+    <Parameter Name="SchoolId" Type="int" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_User_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="IdNumber" Type="varchar" Mode="In" />
+    <Parameter Name="PersalNumber" Type="varchar" Mode="In" />
+    <Parameter Name="Initials" Type="varchar" Mode="In" />
+    <Parameter Name="Title" Type="int" Mode="In" />
+    <Parameter Name="TelephoneNumber" Type="varchar" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="Surname" Type="varchar" Mode="In" />
+    <Parameter Name="Gender" Type="varchar" Mode="In" />
+    <Parameter Name="EmailAddress" Type="varchar" Mode="In" />
+    <Parameter Name="CellPhoneNumber" Type="varchar" Mode="In" />
+    <Parameter Name="LevelId" Type="smallint" Mode="In" />
+    <Parameter Name="UserId" Type="nvarchar" Mode="In" />
+    <Parameter Name="DistrictId" Type="int" Mode="In" />
+    <Parameter Name="SchoolId" Type="int" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_UserTraining_ApproveById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="UserId" Type="varchar" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_UserTraining_ByIdNumber" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdNumber" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="up_UserTraining_ByIdNumberAndRelatedToId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdNumber" Type="varchar" Mode="In" />
+    <Parameter Name="RelatedTo" Type="int" Mode="In" />
+  </Function>
+  <Function Name="up_UserTraining_ByIdNumberAndSchuduleId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="IdNumber" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="up_UserTraining_ByNumberAndRelatedToId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdNumber" Type="varchar" Mode="In" />
+    <Parameter Name="RelatedTo" Type="int" Mode="In" />
+  </Function>
+  <Function Name="up_UserTraining_Cancel_ByEnrollId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="LastUpdatedBy" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="up_UserTraining_CancelByIdNumberAndSchuduleId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="IdNumber" Type="varchar" Mode="In" />
+    <Parameter Name="UserId" Type="nvarchar" Mode="In" />
+    <Parameter Name="Message" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_UserTraining_RejectById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="UserId" Type="varchar" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="up_Level_ByNothing1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="Lookup" StoreFunctionName="up_Level_ByNothing" />
+  <Function Name="up_LookupByTableName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="Lookup">
+    <Parameter Name="table" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="TeacherDevelopment1V2ModelStoreContainer">
+    <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Addresses" EntityType="Self.Addresses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ApprovalRoute" EntityType="Self.ApprovalRoute" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Circuit" EntityType="Self.Circuit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CircuitPosition" EntityType="Self.CircuitPosition" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cluster" EntityType="Self.Cluster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ClusterPosition" EntityType="Self.ClusterPosition" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="District" EntityType="Self.District" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DistrictPosition" EntityType="Self.DistrictPosition" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Enroll" EntityType="Self.Enroll" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ErrorLog" EntityType="Self.ErrorLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Experience" EntityType="Self.Experience" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Grade" EntityType="Self.Grade" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GradeSubject" EntityType="Self.GradeSubject" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Level" EntityType="Self.Level" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Notification" EntityType="Self.Notification" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Partners" EntityType="Self.Partners" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PartnersPosition" EntityType="Self.PartnersPosition" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Phase" EntityType="Self.Phase" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PhaseSubject" EntityType="Self.PhaseSubject" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Position" EntityType="Self.Position" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Project" EntityType="Self.Project" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Province" EntityType="Self.Province" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProvincePosition" EntityType="Self.ProvincePosition" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Qualification" EntityType="Self.Qualification" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Region" EntityType="Self.Region" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RegionPosition" EntityType="Self.RegionPosition" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ResetPassword" EntityType="Self.ResetPassword" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="School" EntityType="Self.School" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SchoolPosition" EntityType="Self.SchoolPosition" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sessions" EntityType="Self.Sessions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Subject" EntityType="Self.Subject" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SubjectProject" EntityType="Self.SubjectProject" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Personal_Details" EntityType="Self.tbl_Personal_Details" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TeacherPosition1" EntityType="Self.TeacherPosition1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Trainee" EntityType="Self.Trainee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TraineeGradeSubject" EntityType="Self.TraineeGradeSubject" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Training" EntityType="Self.Training" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TrainingSchedule" EntityType="Self.TrainingSchedule" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Venue" EntityType="Self.Venue" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VenueSchedule" EntityType="Self.VenueSchedule" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Gender" EntityType="Self.Gender" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Gender].[Id] AS [Id], 
+    [Gender].[Name] AS [Name]
+    FROM [dbo].[Gender] AS [Gender]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Nationality" EntityType="Self.Nationality" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Nationality].[Id] AS [Id], 
+    [Nationality].[Name] AS [Name]
+    FROM [dbo].[Nationality] AS [Nationality]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Race" EntityType="Self.Race" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Race].[Id] AS [Id], 
+    [Race].[Name] AS [Name]
+    FROM [dbo].[Race] AS [Race]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Title" EntityType="Self.Title" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Title].[Id] AS [Id], 
+    [Title].[Name] AS [Name]
+    FROM [dbo].[Title] AS [Title]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Addresses_Addresses" Association="Self.FK_Addresses_Addresses">
+      <End Role="Trainee" EntitySet="Trainee" />
+      <End Role="Addresses" EntitySet="Addresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ApprovalRoute_Level" Association="Self.FK_ApprovalRoute_Level">
+      <End Role="Level" EntitySet="Level" />
+      <End Role="ApprovalRoute" EntitySet="ApprovalRoute" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Circuit_District" Association="Self.FK_Circuit_District">
+      <End Role="District" EntitySet="District" />
+      <End Role="Circuit" EntitySet="Circuit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CircuitPosition_Circuit" Association="Self.FK_CircuitPosition_Circuit">
+      <End Role="Circuit" EntitySet="Circuit" />
+      <End Role="CircuitPosition" EntitySet="CircuitPosition" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CircuitPosition_SchoolPosition" Association="Self.FK_CircuitPosition_SchoolPosition">
+      <End Role="SchoolPosition" EntitySet="SchoolPosition" />
+      <End Role="CircuitPosition" EntitySet="CircuitPosition" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cluster_Circuit" Association="Self.FK_Cluster_Circuit">
+      <End Role="Circuit" EntitySet="Circuit" />
+      <End Role="Cluster" EntitySet="Cluster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClusterPosition_Cluster" Association="Self.FK_ClusterPosition_Cluster">
+      <End Role="Cluster" EntitySet="Cluster" />
+      <End Role="ClusterPosition" EntitySet="ClusterPosition" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClusterPosition_SchoolPosition" Association="Self.FK_ClusterPosition_SchoolPosition">
+      <End Role="SchoolPosition" EntitySet="SchoolPosition" />
+      <End Role="ClusterPosition" EntitySet="ClusterPosition" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_District_Region" Association="Self.FK_District_Region">
+      <End Role="Region" EntitySet="Region" />
+      <End Role="District" EntitySet="District" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DistrictPosition_District" Association="Self.FK_DistrictPosition_District">
+      <End Role="District" EntitySet="District" />
+      <End Role="DistrictPosition" EntitySet="DistrictPosition" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DistrictPosition_Position" Association="Self.FK_DistrictPosition_Position">
+      <End Role="Position" EntitySet="Position" />
+      <End Role="DistrictPosition" EntitySet="DistrictPosition" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Enroll_Status" Association="Self.FK_Enroll_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="Enroll" EntitySet="Enroll" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Enroll_Trainee" Association="Self.FK_Enroll_Trainee">
+      <End Role="Trainee" EntitySet="Trainee" />
+      <End Role="Enroll" EntitySet="Enroll" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Enroll_TrainingSchedule" Association="Self.FK_Enroll_TrainingSchedule">
+      <End Role="TrainingSchedule" EntitySet="TrainingSchedule" />
+      <End Role="Enroll" EntitySet="Enroll" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Grade_Phase" Association="Self.FK_Grade_Phase">
+      <End Role="Phase" EntitySet="Phase" />
+      <End Role="Grade" EntitySet="Grade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GradeSubject_Grade" Association="Self.FK_GradeSubject_Grade">
+      <End Role="Grade" EntitySet="Grade" />
+      <End Role="GradeSubject" EntitySet="GradeSubject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GradeSubject_Subject" Association="Self.FK_GradeSubject_Subject">
+      <End Role="Subject" EntitySet="Subject" />
+      <End Role="GradeSubject" EntitySet="GradeSubject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Notification_AspNetUsers" Association="Self.FK_Notification_AspNetUsers">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="Notification" EntitySet="Notification" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Partners_Level" Association="Self.FK_Partners_Level">
+      <End Role="Level" EntitySet="Level" />
+      <End Role="Partners" EntitySet="Partners" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PartnersPosition_Partners" Association="Self.FK_PartnersPosition_Partners">
+      <End Role="Partners" EntitySet="Partners" />
+      <End Role="PartnersPosition" EntitySet="PartnersPosition" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PartnersPosition_Position" Association="Self.FK_PartnersPosition_Position">
+      <End Role="Position" EntitySet="Position" />
+      <End Role="PartnersPosition" EntitySet="PartnersPosition" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhaseSubject_Phase" Association="Self.FK_PhaseSubject_Phase">
+      <End Role="Phase" EntitySet="Phase" />
+      <End Role="PhaseSubject" EntitySet="PhaseSubject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhaseSubject_Subject" Association="Self.FK_PhaseSubject_Subject">
+      <End Role="Subject" EntitySet="Subject" />
+      <End Role="PhaseSubject" EntitySet="PhaseSubject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Position_User" Association="Self.FK_Position_User">
+      <End Role="Position" EntitySet="Position" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProvincePosition_Position" Association="Self.FK_ProvincePosition_Position">
+      <End Role="Position" EntitySet="Position" />
+      <End Role="ProvincePosition" EntitySet="ProvincePosition" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProvincePosition_Province" Association="Self.FK_ProvincePosition_Province">
+      <End Role="Province" EntitySet="Province" />
+      <End Role="ProvincePosition" EntitySet="ProvincePosition" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Qualification_Trainee" Association="Self.FK_Qualification_Trainee">
+      <End Role="Trainee" EntitySet="Trainee" />
+      <End Role="Qualification" EntitySet="Qualification" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Region_Province" Association="Self.FK_Region_Province">
+      <End Role="Province" EntitySet="Province" />
+      <End Role="Region" EntitySet="Region" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RegionPosition_Region" Association="Self.FK_RegionPosition_Region">
+      <End Role="Region" EntitySet="Region" />
+      <End Role="RegionPosition" EntitySet="RegionPosition" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResetPassword_ResetPassword" Association="Self.FK_ResetPassword_ResetPassword">
+      <End Role="ResetPassword" EntitySet="ResetPassword" />
+      <End Role="ResetPassword1" EntitySet="ResetPassword" />
+    </AssociationSet>
+    <AssociationSet Name="FK_School_Cluster" Association="Self.FK_School_Cluster">
+      <End Role="Cluster" EntitySet="Cluster" />
+      <End Role="School" EntitySet="School" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SubjectProject_Project" Association="Self.FK_SubjectProject_Project">
+      <End Role="Project" EntitySet="Project" />
+      <End Role="SubjectProject" EntitySet="SubjectProject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SubjectProject_Subject" Association="Self.FK_SubjectProject_Subject">
+      <End Role="Subject" EntitySet="Subject" />
+      <End Role="SubjectProject" EntitySet="SubjectProject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Trainee_Experience" Association="Self.FK_Trainee_Experience">
+      <End Role="Trainee" EntitySet="Trainee" />
+      <End Role="Experience" EntitySet="Experience" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TraineeGradeSubject_GradeSubject" Association="Self.FK_TraineeGradeSubject_GradeSubject">
+      <End Role="GradeSubject" EntitySet="GradeSubject" />
+      <End Role="TraineeGradeSubject" EntitySet="TraineeGradeSubject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TraineeGradeSubject_Trainee" Association="Self.FK_TraineeGradeSubject_Trainee">
+      <End Role="Trainee" EntitySet="Trainee" />
+      <End Role="TraineeGradeSubject" EntitySet="TraineeGradeSubject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Training_PhaseSubject" Association="Self.FK_Training_PhaseSubject">
+      <End Role="PhaseSubject" EntitySet="PhaseSubject" />
+      <End Role="Training" EntitySet="Training" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Training_SubjectProject" Association="Self.FK_Training_SubjectProject">
+      <End Role="SubjectProject" EntitySet="SubjectProject" />
+      <End Role="Training" EntitySet="Training" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrainingSchedule_Status" Association="Self.FK_TrainingSchedule_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="TrainingSchedule" EntitySet="TrainingSchedule" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrainingSchedule_Training" Association="Self.FK_TrainingSchedule_Training">
+      <End Role="Training" EntitySet="Training" />
+      <End Role="TrainingSchedule" EntitySet="TrainingSchedule" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrainingSchedule_Venue" Association="Self.FK_TrainingSchedule_Venue">
+      <End Role="Venue" EntitySet="Venue" />
+      <End Role="TrainingSchedule" EntitySet="TrainingSchedule" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_AspNetUsers" Association="Self.FK_User_AspNetUsers">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Level" Association="Self.FK_User_Level">
+      <End Role="Level" EntitySet="Level" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VenueSchedule_Status" Association="Self.FK_VenueSchedule_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="VenueSchedule" EntitySet="VenueSchedule" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VenueSchedule_TrainingSchedule" Association="Self.FK_VenueSchedule_TrainingSchedule">
+      <End Role="TrainingSchedule" EntitySet="TrainingSchedule" />
+      <End Role="VenueSchedule" EntitySet="VenueSchedule" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VenueSchedule_Venue" Association="Self.FK_VenueSchedule_Venue">
+      <End Role="Venue" EntitySet="Venue" />
+      <End Role="VenueSchedule" EntitySet="VenueSchedule" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

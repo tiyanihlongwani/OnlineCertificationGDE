@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="725d7cd7778242fe853aac22ca60f762" Name="Diagram1" ZoomLevel="108">
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.AvailedOptionsToSupportGrade12" Width="1.5" PointX="6" PointY="80.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.AverageLearnerAttendenceBetween31AugustAnd11September" Width="1.5" PointX="3" PointY="36.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.CoveredGradeFundamental" Width="1.5" PointX="6" PointY="76.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.CurriculumDeliveryAcrossTheDiffentLockdownLevel" Width="1.5" PointX="3" PointY="55.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.DistrictLockdownLearningSupport" Width="1.5" PointX="8" PointY="83.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.EducatorDevicesReliantOn" Width="1.5" PointX="5.25" PointY="66.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.EducatorsResourcesDetail" Width="1.5" PointX="3" PointY="64.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.Finance" Width="1.5" PointX="3" PointY="82.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.FinanceSchoolFeeDefaulter" Width="1.5" PointX="5.25" PointY="84.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.FinanceSchoolShortfallOption" Width="1.5" PointX="5.25" PointY="87.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.GradesCompleteRequiredAssessmentTask" Width="1.5" PointX="11" PointY="81.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.LaggingBehindSchoolIntervention" Width="1.5" PointX="11" PointY="78.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.LearnerInformationByCategory" Width="1.5" PointX="3" PointY="110.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.LockdownLearningDetail" Width="1.5" PointX="11" PointY="84.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.LookupCategory" Width="1.5" PointX="0.75" PointY="31.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.LookupItem" Width="1.5" PointX="3" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.LTSM" Width="1.5" PointX="3" PointY="125.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.OnlineRemoteAndDistanceLearning" Width="1.5" PointX="3" PointY="133.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.ParentsAndLearnersGuidence" Width="1.5" PointX="11" PointY="87.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.SchoolAdjustmentsToConform" Width="1.5" PointX="5.25" PointY="73.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.SchoolBuildingCondition" Width="1.5" PointX="3" PointY="139.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.SchoolConformOption" Width="1.5" PointX="8.25" PointY="75.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.SchoolDisruptionsCaus" Width="1.5" PointX="8.25" PointY="72.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.SchoolForcedClosureReason" Width="1.5" PointX="8.25" PointY="78.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.SchoolInformParentsAboutChildrenPerformance" Width="1.5" PointX="5.25" PointY="63.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.SchoolLockdownLearnersAssistance" Width="1.5" PointX="11" PointY="90.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.SchoolNutritionChallengeRespons" Width="1.5" PointX="11.25" PointY="75.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.SchoolRequirementsToComplyWithCovid19" Width="1.5" PointX="8.25" PointY="69.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.SchoolTransportChallengeRespons" Width="1.5" PointX="11.25" PointY="72.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.SeniorPhaseGradesApplication" Width="1.5" PointX="5.25" PointY="69.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.SubjectObtainedApproval" Width="1.5" PointX="8.25" PointY="66.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.UseOfDevicesUtilisedByEducator" Width="1.5" PointX="8.25" PointY="63.125" IsExpanded="true" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_AvailedOptionsToSupportGrade12_LookupItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CoveredGradeFundamentals_LookupItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_DistrictLockdownLearningSupport_LookupItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_EducatorDevicesReliantOn_EducatorsResourcesDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_EducatorDevicesReliantOn_LookupItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolInformParentsAboutChildrenPerformance_EducatorsResourcesDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SeniorPhaseGradesApplications_EducatorsResourcesDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SubjectObtainedApproval_EducatorsResourcesDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_UseOfDevicesUtilisedByEducators_EducatorsResourcesDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_FinanceSchoolFeeDefaulters_Finance" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_FinanceSchoolShortfallOptions_Finance" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_GradesCompleteRequiredAssessmentTasks_LookupItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_LaggingBehindSchoolInterventions_LookupItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_LockdownLearningDetails_LookupItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_LookupItem_LookupCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_ParentsAndLearnersGuidence_LookupItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolAdjustmentsToConform_LookupItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolConformOptions_LookupItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolDisruptionsCauses_LookupItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolForcedClosureReasons_LookupItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolInformParentsAboutChildrenPerformance_LookupItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolLockdownLearnersAssistance_LookupItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolNutritionChallengeResponses_LookupItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolRequirementsToComplyWithCovid19_LookupItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolTransportChallengeResponses_LookupItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SeniorPhaseGradesApplications_LookupItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SubjectObtainedApproval_LookupItem" ManuallyRouted="false" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_UseOfDevicesUtilisedByEducators_LookupItem" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.StaffInformationSMTManagementOfAttendence" Width="1.5" PointX="3" PointY="25.375" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.SchoolDisifector" Width="1.5" PointX="5.25" PointY="25.5" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolDisifector_LookupItem" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.ClassInformation_NonRotatingGrades" Width="1.5" PointX="5.25" PointY="57.875" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.ClassInformationDetail" Width="1.5" PointX="3" PointY="49.375" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_ClassInformation_NonRotatingGrades_LookupItem" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.SchoolMultiGrade" Width="1.5" PointX="3" PointY="92.125" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.HostelBoarder" Width="3.75" PointX="3" PointY="95.25" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.LearnersCovid19StatisticsPerAgeGroup" Width="1.5" PointX="3" PointY="119.25" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.LearnersCovid19StatisticsPerGrade" Width="1.5" PointX="3" PointY="115.375" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.StaffCovid19StatisticsPerAgeGroup" Width="1.5" PointX="3" PointY="100.25" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.CurriculumDelivery_ApprovedSubjects" Width="1.5" PointX="5.25" PointY="11.875" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.CurriculumDelivery_DistrictSupportRecievedForLockdownLearning" Width="1.5" PointX="11.25" PointY="17.875" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.CurriculumDelivery_HowDidTheSchoolInformParentsAboutThePerformanceOfTheirChildren" Width="1.5" PointX="11.25" PointY="14.875" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.CurriculumDelivery_HowHasTheSchoolAssistedLockdownLearnersWithTheirAssessmentTasks" Width="1.5" PointX="8.25" PointY="20.875" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.CurriculumDelivery_InitiativesAvailedByTheGDEToSupportMatriculantsToCompleteTheGrade12Programme" Width="1.5" PointX="5.25" PointY="14.875" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.CurriculumDelivery_InitiativesAvailedByThePartnersToSupportMatriculantsToCompleteTheGrade12Programme" Width="1.5" PointX="8.25" PointY="26.875" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.CurriculumDelivery_InitiativesAvailedByTheSchoolToSupportMatriculantsToCompleteTheGrade12Programme" Width="1.5" PointX="8.25" PointY="29.875" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.CurriculumDelivery_LaggingBehindSchoolIntervention" Width="1.5" PointX="5.25" PointY="28.875" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.CurriculumDelivery_MeansToProvideGuidanceToParentsAndLearnersToFacilitateLockdownLearning" Width="1.5" PointX="8.25" PointY="23.875" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.CurriculumDelivery_ReachedGradesDuringLockdonLevel5" Width="1.5" PointX="11.25" PointY="26.875" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.CurriculumDelivery_SeniorPhaseInitiatives" Width="2.5" PointX="5.25" PointY="20.875" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.CurriculumDelivery_SubjectAdvisorsSupportedTheStaff" Width="1.5" PointX="8.25" PointY="14.875" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.CurriculumDelivery_TeacherDevicesAreReliantOn" Width="1.5" PointX="11.25" PointY="23.875" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.Grade12LevelOfCompletion" Width="1.5" PointX="5.25" PointY="54.75" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_ApprovedSubjects_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_DistrictSupportRecievedForLockdownLearning_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_HowDidTheSchoolInformParentsAboutThePerformanceOfTheirChildren_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_HowHasTheSchoolAssistedLockdownLearnersWithTheirAssessmentTasks_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_InitiativesAvailedByTheGDEToSupportMatriculantsToCompleteTheGrade12Programme_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_InitiativesAvailedByThePartnersToSupportMatriculantsToCompleteTheGrade12Programme_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_InitiativesAvailedByTheSchoolToSupportMatriculantsToCompleteTheGrade12Programme_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_LaggingBehindSchoolIntervention_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_MeansToProvideGuidanceToParentsAndLearnersToFacilitateLockdownLearning_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_ReachedGradesDuringLockdonLevel5_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_SeniorPhaseInitiatives_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_SubjectAdvisorsSupportedTheStaff_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_TeacherDevicesAreReliantOn_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_Grade12LevelOfCompletion_LookupItem" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.EducatorResource" Width="1.5" PointX="3" PointY="60.75" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.CurriculumDelivery_AccomodatedGradesFollowingMinistersFirstSetOfDirection" Width="1.5" PointX="5.25" PointY="17.875" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.CurriculumDelivery_AccomodatedGradesFollowingMinistersSetOfDirection02August2020" Width="1.5" PointX="8.25" PointY="17.875" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.CurriculumDelivery_AccomodatedGradesFollowingMinistersSetOfDirection07July2020" Width="1.5" PointX="11.25" PointY="20.875" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_AccomodatedGradesFollowingMinistersFirstSetOfDirestion_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_AccomodatedGradesFollowingMinistersSetOfDirestion02August2020_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_AccomodatedGradesFollowingMinistersSetOfDirestion07July2020_LookupItem" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.CurriculumDelivery" Width="1.5" PointX="3" PointY="5.125" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_AccomodatedGradesFollowingMinistersFirstSetOfDirestion_CurriculumDelivery" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_AccomodatedGradesFollowingMinistersSetOfDirestion02August2020_CurriculumDelivery" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_AccomodatedGradesFollowingMinistersSetOfDirestion07July2020_CurriculumDelivery" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_ApprovedSubjects_CurriculumDelivery" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_DistrictSupportRecievedForLockdownLearning_CurriculumDelivery" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_HowDidTheSchoolInformParentsAboutThePerformanceOfTheirChildren_CurriculumDelivery" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_HowHasTheSchoolAssistedLockdownLearnersWithTheirAssessmentTasks_CurriculumDelivery" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_InitiativesAvailedByTheGDEToSupportMatriculantsToCompleteTheGrade12Programme_CurriculumDelivery" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_InitiativesAvailedByThePartnersToSupportMatriculantsToCompleteTheGrade12Programme_CurriculumDelivery" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_InitiativesAvailedByTheSchoolToSupportMatriculantsToCompleteTheGrade12Programme_CurriculumDelivery" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_LaggingBehindSchoolIntervention_CurriculumDelivery" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_MeansToProvideGuidanceToParentsAndLearnersToFacilitateLockdownLearning_CurriculumDelivery" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_ReachedGradesDuringLockdonLevel5_CurriculumDelivery" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_SeniorPhaseInitiatives_CurriculumDelivery" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_SubjectAdvisorsSupportedTheStaff_CurriculumDelivery" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_TeacherDevicesAreReliantOn_CurriculumDelivery" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.EnablingConditions_CausesOfDisruptions" Width="1.5" PointX="8.25" PointY="52.375" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.EnablingConditions_HowDidTheSchoolConformToThePhysicalDistancingRequirementsClassrooms" Width="1.5" PointX="8.25" PointY="58.375" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.EnablingConditions_HowDidTheSchoolConformToThePhysicalDistancingRequirementsFurniture" Width="1.5" PointX="8.25" PointY="55.375" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.EnablingConditions_ReasonsForSchoolClosure" Width="1.5" PointX="8.25" PointY="49.375" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.EnablingConditions_SchoolRequirementsToComplyWithPhysicalDistance" Width="1.5" PointX="11.25" PointY="55.375" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.EnablingConditions_SchoolResponsesToLearnerTransportProgrammeChallenges" Width="1.5" PointX="5.25" PointY="51.375" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.EnablingConditions_SchoolResponsesToNutritionProgrammeChallenges" Width="1.5" PointX="11.25" PointY="52.375" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_EnablingConditions_CausesOfDisruptions_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_EnablingConditions_HowDidTheSchoolConformToThePhysicalDistancingRequirementsClassrooms_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_EnablingConditions_HowDidTheSchoolConformToThePhysicalDistancingRequirementsFurniture_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_EnablingConditions_ReasonsForSchoolClosure_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_EnablingConditions_SchoolRequirementsToComplyWithPhysicalDistance_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_EnablingConditions_SchoolResponsesToLearnerTransportProgrammeChallenges_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_EnablingConditions_SchoolResponsesToNutritionProgrammeChallenges_LookupItem" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.EnablingCondition" Width="1.5" PointX="3" PointY="163.5" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_EnablingConditions_CausesOfDisruptions_EnablingConditions" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_EnablingConditions_HowDidTheSchoolConformToThePhysicalDistancingRequirementsClassrooms_EnablingConditions" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_EnablingConditions_HowDidTheSchoolConformToThePhysicalDistancingRequirementsFurniture_EnablingConditions" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_EnablingConditions_ReasonsForSchoolClosure_EnablingConditions" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_EnablingConditions_SchoolRequirementsToComplyWithPhysicalDistance_EnablingConditions" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_EnablingConditions_SchoolResponsesToLearnerTransportProgrammeChallenges_EnablingConditions" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_EnablingConditions_SchoolResponsesToNutritionProgrammeChallenges_EnablingConditions" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolAdjustmentsToConform_EnablingConditions" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolConformOptions_EnablingConditions" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolDisruptionsCauses_EnablingConditions" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolForcedClosureReasons_EnablingConditions" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolNutritionChallengeResponses_EnablingConditions" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolRequirementsToComplyWithCovid19_EnablingConditions" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolTransportChallengeResponses_EnablingConditions" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.CurriculumDelivery_AccomodatedGradesFollowingMinistersFirstSetOfDirection29June2020" Width="1.5" PointX="11.25" PointY="29.625" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_AccomodatedGradesFollowingMinistersFirstSetOfDirection29June2020_CurriculumDelivery" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_AccomodatedGradesFollowingMinistersFirstSetOfDirection29June2020_LookupItem" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.LearnerInformation" Width="1.5" PointX="3" PointY="104.5" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.StaffInformationManagementOfConcession" Width="1.5" PointX="3" PointY="78.125" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.CurriculumDelivery_ModeOfDeliveryAdoptedByTheSchoolsToDeliverTheCurriculum" Width="1.5" PointX="14.25" PointY="21.625" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.School" Width="1.5" PointX="0.75" PointY="83.75" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_AvailedOptionsToSupportGrade12_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_AverageLearnerAttendenceBetween31AugustAnd11September_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_ClassInformation_NonRotatingGrades_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_ClassInformationDetails_ClassInformationDetails" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CoveredGradeFundamentals_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_ModeOfDeliveryAdoptedByTheSchoolsToDeliverTheCurriculum_CurriculumDelivery" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_ModeOfDeliveryAdoptedByTheSchoolsToDeliverTheCurriculum_LookupItem" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDelivery_ModeOfDeliveryAdoptedByTheSchoolsToDeliverTheCurriculum_LookupItem1" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_CurriculumDeliveryAcrossTheDiffentLockdownLevels_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_DistrictLockdownLearningSupport_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_EdicatorResources_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_EducatorsResourcesDetails_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_EnablingConditions_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_Finance_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_Grade12LevelOfCompletion_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_GradesCompleteRequiredAssessmentTasks_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_HostelBoarder_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_LaggingBehindSchoolInterventions_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_LearnerInformation_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_LearnerInformationByCategory_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_LearnersCovid19StatisticsPerAgeGroup_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_LearnersCovid19StatisticsPerGrade_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_LockdownLearningDetails_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_LTSM_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_OnlineRemoteAndDistanceLearning_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_ParentsAndLearnersGuidence_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolBuildingCondition_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolLockdownLearnersAssistance_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolMultiGrade_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_StaffCovid19StatisticsPerAgeGroup_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_StaffInformationManagementOfConcessions_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_StaffInformationSMTManagementOfAttendence_School" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.ClassInformation" Width="1.5" PointX="3" PointY="70.75" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_ClassInformation_School" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_SchoolDisifector_ClassInformation" />
+        <EntityTypeShape EntityType="Covid19ImpactSurveyModel.StaffInformationHeadCount" Width="1.5" PointX="3" PointY="43.5" />
+        <AssociationConnector Association="Covid19ImpactSurveyModel.FK_StaffInformationHeadCount_School" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

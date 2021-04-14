@@ -1,0 +1,1019 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Covid19ImpactSurveyModelStoreContainer" CdmEntityContainer="Covid19ImpactSurveyEntities">
+    <EntitySetMapping Name="AvailedOptionsToSupportGrade12">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.AvailedOptionsToSupportGrade12">
+        <MappingFragment StoreEntitySet="AvailedOptionsToSupportGrade12">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AvailedOptionID" ColumnName="AvailedOptionID" />
+          <ScalarProperty Name="AvaildeBy" ColumnName="AvaildeBy" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AverageLearnerAttendenceBetween31AugustAnd11September">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.AverageLearnerAttendenceBetween31AugustAnd11September">
+        <MappingFragment StoreEntitySet="AverageLearnerAttendenceBetween31AugustAnd11September">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NoOfLearnersExpected" ColumnName="NoOfLearnersExpected" />
+          <ScalarProperty Name="NoOfLearnersReturned" ColumnName="NoOfLearnersReturned" />
+          <ScalarProperty Name="AverageAttendance" ColumnName="AverageAttendance" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CoveredGradeFundamentals">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.CoveredGradeFundamental">
+        <MappingFragment StoreEntitySet="CoveredGradeFundamentals">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurriculumDeliveryAcrossTheDiffentLockdownLevels">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.CurriculumDeliveryAcrossTheDiffentLockdownLevel">
+        <MappingFragment StoreEntitySet="CurriculumDeliveryAcrossTheDiffentLockdownLevels">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GradeID" ColumnName="GradeID" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DistrictLockdownLearningSupports">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.DistrictLockdownLearningSupport">
+        <MappingFragment StoreEntitySet="DistrictLockdownLearningSupport">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DistrictLockdownLearningSupportID" ColumnName="DistrictLockdownLearningSupportID" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EducatorDevicesReliantOns">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.EducatorDevicesReliantOn">
+        <MappingFragment StoreEntitySet="EducatorDevicesReliantOn">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EducatorsResourcesDetailsID" ColumnName="EducatorsResourcesDetailsID" />
+          <ScalarProperty Name="EducatorDevicesReliantOnID" ColumnName="EducatorDevicesReliantOnID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EducatorsResourcesDetails">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.EducatorsResourcesDetail">
+        <MappingFragment StoreEntitySet="EducatorsResourcesDetails">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DidTheSchoolProvideEducatorsWithData" ColumnName="DidTheSchoolProvideEducatorsWithData" />
+          <ScalarProperty Name="NoOfEducatorTrainedToUseOnlineSolution" ColumnName="NoOfEducatorTrainedToUseOnlineSolution" />
+          <ScalarProperty Name="NoOfEducatorNotTrainedToUseOnlineSolution" ColumnName="NoOfEducatorNotTrainedToUseOnlineSolution" />
+          <ScalarProperty Name="NoOfEducatorAbleToUseOnlineSolution" ColumnName="NoOfEducatorAbleToUseOnlineSolution" />
+          <ScalarProperty Name="WasQ1Term1OfTheATPcompleted" ColumnName="WasQ1Term1OfTheATPcompleted" />
+          <ScalarProperty Name="WasTheQ1Term1AssessmentCompleted" ColumnName="WasTheQ1Term1AssessmentCompleted" />
+          <ScalarProperty Name="WereQ1Term1ReportCardsIssued" ColumnName="WereQ1Term1ReportCardsIssued" />
+          <ScalarProperty Name="IsTheSchoolImplementingTheRevisedATP" ColumnName="IsTheSchoolImplementingTheRevisedATP" />
+          <ScalarProperty Name="AreTheLearnersAttendingClassAtSchoolAndThoseAtHomeAtTheSameLevelOfCompletion" ColumnName="AreTheLearnersAttendingClassAtSchoolAndThoseAtHomeAtTheSameLevelOfCompletion" />
+          <ScalarProperty Name="DoesTheSchoolEnsureThatTheParentsSubmitTheirChildrensAssessmentOnTime" ColumnName="DoesTheSchoolEnsureThatTheParentsSubmitTheirChildrensAssessmentOnTime" />
+          <ScalarProperty Name="NoOfLearnersBenefittedFromHomeLearningPacksFromSchool" ColumnName="NoOfLearnersBenefittedFromHomeLearningPacksFromSchool" />
+          <ScalarProperty Name="WillTheSchoolHaveCompletedTheGrade12ProgrammeInAdvanceOfPrelimExaminations" ColumnName="WillTheSchoolHaveCompletedTheGrade12ProgrammeInAdvanceOfPrelimExaminations" />
+          <ScalarProperty Name="ReasonForNotCompletingTheGrade12ProgrammeInAdvanceOfPrelimExaminations" ColumnName="ReasonForNotCompletingTheGrade12ProgrammeInAdvanceOfPrelimExaminations" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Finances">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.Finance">
+        <MappingFragment StoreEntitySet="Finance">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SchoolTypeID" ColumnName="SchoolTypeID" />
+          <ScalarProperty Name="IsTheSchoolProjectingShortfallInRevenue" ColumnName="IsTheSchoolProjectingShortfallInRevenue" />
+          <ScalarProperty Name="NoOfLearnersApprovedForSchoolFeeExemptionsConditional2019" ColumnName="NoOfLearnersApprovedForSchoolFeeExemptionsConditional2019" />
+          <ScalarProperty Name="NoOfLearnersApprovedForSchoolFeeExemptionsConditional2020" ColumnName="NoOfLearnersApprovedForSchoolFeeExemptionsConditional2020" />
+          <ScalarProperty Name="NoOfLearnersApprovedForSchoolFeeExemptionsPartial2019" ColumnName="NoOfLearnersApprovedForSchoolFeeExemptionsPartial2019" />
+          <ScalarProperty Name="NoOfLearnersApprovedForSchoolFeeExemptionsPartial2020" ColumnName="NoOfLearnersApprovedForSchoolFeeExemptionsPartial2020" />
+          <ScalarProperty Name="NoOfLearnersApprovedForSchoolFeeExemptionsTotal2019" ColumnName="NoOfLearnersApprovedForSchoolFeeExemptionsTotal2019" />
+          <ScalarProperty Name="NoOfLearnersApprovedForSchoolFeeExemptionsTotal2020" ColumnName="NoOfLearnersApprovedForSchoolFeeExemptionsTotal2020" />
+          <ScalarProperty Name="NoOfLearnersApprovedPostLockdownConditional" ColumnName="NoOfLearnersApprovedPostLockdownConditional" />
+          <ScalarProperty Name="NoOfLearnersApprovedPostLockdownPartial" ColumnName="NoOfLearnersApprovedPostLockdownPartial" />
+          <ScalarProperty Name="NoOfLearnersApprovedPostLockdownTotal" ColumnName="NoOfLearnersApprovedPostLockdownTotal" />
+          <ScalarProperty Name="NoOfLearnersWhoseParentsDefaultedOnSchoolFeePayments2019" ColumnName="NoOfLearnersWhoseParentsDefaultedOnSchoolFeePayments2019" />
+          <ScalarProperty Name="NoOfLearnersWhoseParentsDefaultedOnSchoolFeePayments2020" ColumnName="NoOfLearnersWhoseParentsDefaultedOnSchoolFeePayments2020" />
+          <ScalarProperty Name="HowDidTheReducedRevenueCollectionImpactOnOperations" ColumnName="HowDidTheReducedRevenueCollectionImpactOnOperations" />
+          <ScalarProperty Name="DidYouContinueWithSection38APaymentsToStaff" ColumnName="DidYouContinueWithSection38APaymentsToStaff" />
+          <ScalarProperty Name="HowDidTheSchoolManagePayments" ColumnName="HowDidTheSchoolManagePayments" />
+          <ScalarProperty Name="CanTheSchoolConfirmThatLTSMHasBeenProcuredFor2021" ColumnName="CanTheSchoolConfirmThatLTSMHasBeenProcuredFor2021" />
+          <ScalarProperty Name="CanTheSchoolConfirmThatItHasBeenAbleToPayTheirMunicipalAccounts" ColumnName="CanTheSchoolConfirmThatItHasBeenAbleToPayTheirMunicipalAccounts" />
+          <ScalarProperty Name="CanTheSchoolConfirmThatItHasBeenAbleToUndertakeMinorRepairsUsingTheMaintenanceBudget" ColumnName="CanTheSchoolConfirmThatItHasBeenAbleToUndertakeMinorRepairsUsingTheMaintenanceBudget" />
+          <ScalarProperty Name="CanTheSchoolConfirmThatTheyHavePaidAllTheirSGBAppointedStaff" ColumnName="CanTheSchoolConfirmThatTheyHavePaidAllTheirSGBAppointedStaff" />
+          <ScalarProperty Name="DidTheSchoolRelieveSGBAppointedTeachingStaffOfTheirDuties" ColumnName="DidTheSchoolRelieveSGBAppointedTeachingStaffOfTheirDuties" />
+          <ScalarProperty Name="NoOfSGBAppointedTeachingStaffWereAffected" ColumnName="NoOfSGBAppointedTeachingStaffWereAffected" />
+          <ScalarProperty Name="WasTheReprioritisedBudgetApprovedAtAnAGM" ColumnName="WasTheReprioritisedBudgetApprovedAtAnAGM" />
+          <ScalarProperty Name="DidTheInitiativesPursuedAssistTheSchoolInRealisingTheBudgetRevenueShortfall" ColumnName="DidTheInitiativesPursuedAssistTheSchoolInRealisingTheBudgetRevenueShortfall" />
+          <ScalarProperty Name="IsThisSchoolSubsidisedByTheState" ColumnName="IsThisSchoolSubsidisedByTheState" />
+          <ScalarProperty Name="WhatAreTheMainSourcesOfRevenueForTheSchool" ColumnName="WhatAreTheMainSourcesOfRevenueForTheSchool" />
+          <ScalarProperty Name="IsTheSchoolProjectingShortfallInRevenueCollectionFor2020" ColumnName="IsTheSchoolProjectingShortfallInRevenueCollectionFor2020" />
+          <ScalarProperty Name="HaveYouPurchasedAdditionalLearnerAndEducatorSupportMaterial" ColumnName="HaveYouPurchasedAdditionalLearnerAndEducatorSupportMaterial" />
+          <ScalarProperty Name="DoesTheSchoolHaveSufficientTextbooksForAllTheLearners" ColumnName="DoesTheSchoolHaveSufficientTextbooksForAllTheLearners" />
+          <ScalarProperty Name="WasTheSchoolAbleToPayTheirMunicipalAccounts" ColumnName="WasTheSchoolAbleToPayTheirMunicipalAccounts" />
+          <ScalarProperty Name="WasTheSchoolAbleToPurchasePPEsAndCovid19RelatedSupplies" ColumnName="WasTheSchoolAbleToPurchasePPEsAndCovid19RelatedSupplies" />
+          <ScalarProperty Name="DidTheSchoolRelieveTeachingStaffOfTheirDutiesToBalanceTheBudget" ColumnName="DidTheSchoolRelieveTeachingStaffOfTheirDutiesToBalanceTheBudget" />
+          <ScalarProperty Name="HowManyTeachingStaffWereRelievedOfTheirDutiesToBalanceTheBudget" ColumnName="HowManyTeachingStaffWereRelievedOfTheirDutiesToBalanceTheBudget" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinanceSchoolFeeDefaulters">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.FinanceSchoolFeeDefaulter">
+        <MappingFragment StoreEntitySet="FinanceSchoolFeeDefaulters">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FinanceID" ColumnName="FinanceID" />
+          <ScalarProperty Name="SchoolDefaulterID" ColumnName="SchoolDefaulterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinanceSchoolShortfallOptions">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.FinanceSchoolShortfallOption">
+        <MappingFragment StoreEntitySet="FinanceSchoolShortfallOptions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FinanceID" ColumnName="FinanceID" />
+          <ScalarProperty Name="ShortfallOptionID" ColumnName="ShortfallOptionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GradesCompleteRequiredAssessmentTasks">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.GradesCompleteRequiredAssessmentTask">
+        <MappingFragment StoreEntitySet="GradesCompleteRequiredAssessmentTasks">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GradeGroup" ColumnName="GradeGroup" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LaggingBehindSchoolInterventions">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.LaggingBehindSchoolIntervention">
+        <MappingFragment StoreEntitySet="LaggingBehindSchoolInterventions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LaggingBehindSchoolInterventionID" ColumnName="LaggingBehindSchoolInterventionID" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LearnerInformationByCategories">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.LearnerInformationByCategory">
+        <MappingFragment StoreEntitySet="LearnerInformationByCategory">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="HeadcountEnrolment" ColumnName="HeadcountEnrolment" />
+          <ScalarProperty Name="CurrentEnrolment" ColumnName="CurrentEnrolment" />
+          <ScalarProperty Name="NoOfLearnersAttendingClassesAtSchoolCurrently" ColumnName="NoOfLearnersAttendingClassesAtSchoolCurrently" />
+          <ScalarProperty Name="NoOfLearnersStudyingFromHomeCurrently" ColumnName="NoOfLearnersStudyingFromHomeCurrently" />
+          <ScalarProperty Name="NoOfLearnersDeregisteredFromTheSchoolAndApprovedForHomeEducation" ColumnName="NoOfLearnersDeregisteredFromTheSchoolAndApprovedForHomeEducation" />
+          <ScalarProperty Name="NoOfLearnersThatHavePotentiallyDroppedOutOfSchool" ColumnName="NoOfLearnersThatHavePotentiallyDroppedOutOfSchool" />
+          <ScalarProperty Name="NoOfLearnersTransferredIntoTheSchool" ColumnName="NoOfLearnersTransferredIntoTheSchool" />
+          <ScalarProperty Name="NoOfLearnersTransferredOutToOtherSchools" ColumnName="NoOfLearnersTransferredOutToOtherSchools" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LockdownLearningDetails">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.LockdownLearningDetail">
+        <MappingFragment StoreEntitySet="LockdownLearningDetails">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LockdownLearningID" ColumnName="LockdownLearningID" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LookupCategories">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.LookupCategory">
+        <MappingFragment StoreEntitySet="LookupCategory">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LookupItems">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.LookupItem">
+        <MappingFragment StoreEntitySet="LookupItem">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Caption" ColumnName="Caption" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LTSMs">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.LTSM">
+        <MappingFragment StoreEntitySet="LTSM">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Grade1" ColumnName="Grade1" />
+          <ScalarProperty Name="Grade2" ColumnName="Grade2" />
+          <ScalarProperty Name="Grade3" ColumnName="Grade3" />
+          <ScalarProperty Name="Grade4" ColumnName="Grade4" />
+          <ScalarProperty Name="Grade5" ColumnName="Grade5" />
+          <ScalarProperty Name="Grade6" ColumnName="Grade6" />
+          <ScalarProperty Name="Grade7" ColumnName="Grade7" />
+          <ScalarProperty Name="Grade8" ColumnName="Grade8" />
+          <ScalarProperty Name="Grade9" ColumnName="Grade9" />
+          <ScalarProperty Name="Grade10" ColumnName="Grade10" />
+          <ScalarProperty Name="Grade11" ColumnName="Grade11" />
+          <ScalarProperty Name="Grade12" ColumnName="Grade12" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OnlineRemoteAndDistanceLearnings">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.OnlineRemoteAndDistanceLearning">
+        <MappingFragment StoreEntitySet="OnlineRemoteAndDistanceLearning">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ModeID" ColumnName="ModeID" />
+          <ScalarProperty Name="PrePrimary" ColumnName="PrePrimary" />
+          <ScalarProperty Name="Primary" ColumnName="Primary" />
+          <ScalarProperty Name="Secondary" ColumnName="Secondary" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParentsAndLearnersGuidences">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.ParentsAndLearnersGuidence">
+        <MappingFragment StoreEntitySet="ParentsAndLearnersGuidence">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ParentsAndLearnersGuidenceID" ColumnName="ParentsAndLearnersGuidenceID" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchoolAdjustmentsToConforms">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.SchoolAdjustmentsToConform">
+        <MappingFragment StoreEntitySet="SchoolAdjustmentsToConform">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EnablingConditionsID" ColumnName="EnablingConditionsID" />
+          <ScalarProperty Name="AdjustmentToConformID" ColumnName="AdjustmentToConformID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchoolBuildingConditions">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.SchoolBuildingCondition">
+        <MappingFragment StoreEntitySet="SchoolBuildingCondition">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RoofStatusID" ColumnName="RoofStatusID" />
+          <ScalarProperty Name="WindowsStatusID" ColumnName="WindowsStatusID" />
+          <ScalarProperty Name="DoorsStatusID" ColumnName="DoorsStatusID" />
+          <ScalarProperty Name="WallsStatusID" ColumnName="WallsStatusID" />
+          <ScalarProperty Name="FloorsStatusID" ColumnName="FloorsStatusID" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchoolConformOptions">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.SchoolConformOption">
+        <MappingFragment StoreEntitySet="SchoolConformOptions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EnablingConditionsID" ColumnName="EnablingConditionsID" />
+          <ScalarProperty Name="SchoolConformID" ColumnName="SchoolConformID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchoolDisruptionsCauses">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.SchoolDisruptionsCaus">
+        <MappingFragment StoreEntitySet="SchoolDisruptionsCauses">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SchoolDisruptionsCauseID" ColumnName="SchoolDisruptionsCauseID" />
+          <ScalarProperty Name="EnablingConditionsID" ColumnName="EnablingConditionsID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchoolForcedClosureReasons">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.SchoolForcedClosureReason">
+        <MappingFragment StoreEntitySet="SchoolForcedClosureReasons">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SchoolForcedClosureReasonID" ColumnName="SchoolForcedClosureReasonID" />
+          <ScalarProperty Name="EnablingConditionsID" ColumnName="EnablingConditionsID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchoolInformParentsAboutChildrenPerformances">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.SchoolInformParentsAboutChildrenPerformance">
+        <MappingFragment StoreEntitySet="SchoolInformParentsAboutChildrenPerformance">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SchoolInformParentsAboutChildrenPerformanceID" ColumnName="SchoolInformParentsAboutChildrenPerformanceID" />
+          <ScalarProperty Name="EducatorsResourcesDetailsID" ColumnName="EducatorsResourcesDetailsID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchoolLockdownLearnersAssistances">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.SchoolLockdownLearnersAssistance">
+        <MappingFragment StoreEntitySet="SchoolLockdownLearnersAssistance">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SchoolLockdownLearnersAssistanceID" ColumnName="SchoolLockdownLearnersAssistanceID" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchoolNutritionChallengeResponses">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.SchoolNutritionChallengeRespons">
+        <MappingFragment StoreEntitySet="SchoolNutritionChallengeResponses">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NutritionChallengeResponseID" ColumnName="NutritionChallengeResponseID" />
+          <ScalarProperty Name="EnablingConditionsID" ColumnName="EnablingConditionsID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchoolRequirementsToComplyWithCovid19">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.SchoolRequirementsToComplyWithCovid19">
+        <MappingFragment StoreEntitySet="SchoolRequirementsToComplyWithCovid19">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RequirementID" ColumnName="RequirementID" />
+          <ScalarProperty Name="EnablingConditionsID" ColumnName="EnablingConditionsID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchoolTransportChallengeResponses">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.SchoolTransportChallengeRespons">
+        <MappingFragment StoreEntitySet="SchoolTransportChallengeResponses">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TransportChallengeResponseID" ColumnName="TransportChallengeResponseID" />
+          <ScalarProperty Name="EnablingConditionsID" ColumnName="EnablingConditionsID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SeniorPhaseGradesApplications">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.SeniorPhaseGradesApplication">
+        <MappingFragment StoreEntitySet="SeniorPhaseGradesApplications">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SeniorPhaseGradesApplicationID" ColumnName="SeniorPhaseGradesApplicationID" />
+          <ScalarProperty Name="EducatorsResourcesDetailsID" ColumnName="EducatorsResourcesDetailsID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubjectObtainedApprovals">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.SubjectObtainedApproval">
+        <MappingFragment StoreEntitySet="SubjectObtainedApproval">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SubjectObtainedApprovalID" ColumnName="SubjectObtainedApprovalID" />
+          <ScalarProperty Name="EducatorsResourcesDetailsID" ColumnName="EducatorsResourcesDetailsID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UseOfDevicesUtilisedByEducators">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.UseOfDevicesUtilisedByEducator">
+        <MappingFragment StoreEntitySet="UseOfDevicesUtilisedByEducators">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EducatorsResourcesDetailsID" ColumnName="EducatorsResourcesDetailsID" />
+          <ScalarProperty Name="UseOfDevicesUtilisedByEducatorsID" ColumnName="UseOfDevicesUtilisedByEducatorsID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StaffInformationSMTManagementOfAttendences">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.StaffInformationSMTManagementOfAttendence">
+        <MappingFragment StoreEntitySet="StaffInformationSMTManagementOfAttendence">
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="HowManyCasesInvolvedPSStaff" ColumnName="HowManyCasesInvolvedPSStaff" />
+          <ScalarProperty Name="HowManyCasesInvolvedStatePaidEducators" ColumnName="HowManyCasesInvolvedStatePaidEducators" />
+          <ScalarProperty Name="HasTheGDEInstitutedDisciplinaryProcesses" ColumnName="HasTheGDEInstitutedDisciplinaryProcesses" />
+          <ScalarProperty Name="NoOfPSStaff" ColumnName="NoOfPSStaff" />
+          <ScalarProperty Name="NoOfStatePaidEducators" ColumnName="NoOfStatePaidEducators" />
+          <ScalarProperty Name="HaveThereBeenStaffWhoHaveNotNeturnedToSchoolWithoutApproval" ColumnName="HaveThereBeenStaffWhoHaveNotNeturnedToSchoolWithoutApproval" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchoolDisifectors">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.SchoolDisifector">
+        <MappingFragment StoreEntitySet="SchoolDisifector">
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+          <ScalarProperty Name="ClassInformationID" ColumnName="ClassInformationID" />
+          <ScalarProperty Name="DisinfectorID" ColumnName="DisinfectorID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClassInformation_NonRotatingGrades">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.ClassInformation_NonRotatingGrades">
+        <MappingFragment StoreEntitySet="ClassInformation_NonRotatingGrades">
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="GradeID" ColumnName="GradeID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClassInformationDetails">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.ClassInformationDetail">
+        <MappingFragment StoreEntitySet="ClassInformationDetails">
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Oth" ColumnName="Oth" />
+          <ScalarProperty Name="Spec" ColumnName="Spec" />
+          <ScalarProperty Name="GradeR" ColumnName="GradeR" />
+          <ScalarProperty Name="PreGradeR" ColumnName="PreGradeR" />
+          <ScalarProperty Name="Grade12" ColumnName="Grade12" />
+          <ScalarProperty Name="Grade11" ColumnName="Grade11" />
+          <ScalarProperty Name="Grade10" ColumnName="Grade10" />
+          <ScalarProperty Name="Grade9" ColumnName="Grade9" />
+          <ScalarProperty Name="Grade8" ColumnName="Grade8" />
+          <ScalarProperty Name="Grade7" ColumnName="Grade7" />
+          <ScalarProperty Name="Grade6" ColumnName="Grade6" />
+          <ScalarProperty Name="Grade5" ColumnName="Grade5" />
+          <ScalarProperty Name="Grade4" ColumnName="Grade4" />
+          <ScalarProperty Name="Grade3" ColumnName="Grade3" />
+          <ScalarProperty Name="Grade2" ColumnName="Grade2" />
+          <ScalarProperty Name="Grade1" ColumnName="Grade1" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchoolMultiGrades">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.SchoolMultiGrade">
+        <MappingFragment StoreEntitySet="SchoolMultiGrade">
+          <ScalarProperty Name="GradeID" ColumnName="GradeID" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HostelBoarders">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.HostelBoarder">
+        <MappingFragment StoreEntitySet="HostelBoarder">
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="WereTheLearnersProvidedWithAdequateHandSanitiser" ColumnName="WereTheLearnersProvidedWithAdequateHandSanitiser" />
+          <ScalarProperty Name="WereTheLearnersProvidedWithAdequatePPEs" ColumnName="WereTheLearnersProvidedWithAdequatePPEs" />
+          <ScalarProperty Name="DidTheSchoolIncreaseTheFrequencyOfCleaningAtTheHostel" ColumnName="DidTheSchoolIncreaseTheFrequencyOfCleaningAtTheHostel" />
+          <ScalarProperty Name="DidTheSchoolApplyTheRelevantPhysicalDistancingLeisureTime" ColumnName="DidTheSchoolApplyTheRelevantPhysicalDistancingLeisureTime" />
+          <ScalarProperty Name="DidTheSchoolApplyTheRelevantPhysicalDistancingStudyTime" ColumnName="DidTheSchoolApplyTheRelevantPhysicalDistancingStudyTime" />
+          <ScalarProperty Name="DidTheSchoolApplyTheRelevantPhysicalDistancingMealTime" ColumnName="DidTheSchoolApplyTheRelevantPhysicalDistancingMealTime" />
+          <ScalarProperty Name="NoOfLearnersAdmittedToTheHostelInJanuary2020Female" ColumnName="NoOfLearnersAdmittedToTheHostelInJanuary2020Female" />
+          <ScalarProperty Name="NoOfLearnersAdmittedToTheHostelInJanuary2020Male" ColumnName="NoOfLearnersAdmittedToTheHostelInJanuary2020Male" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LearnersCovid19StatisticsPerAgeGroup">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.LearnersCovid19StatisticsPerAgeGroup">
+        <MappingFragment StoreEntitySet="LearnersCovid19StatisticsPerAgeGroup">
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="AgeGroup" ColumnName="AgeGroup" />
+          <ScalarProperty Name="NoOfConfirmedDeathsFemale" ColumnName="NoOfConfirmedDeathsFemale" />
+          <ScalarProperty Name="NoOfConfirmedDeathsMale" ColumnName="NoOfConfirmedDeathsMale" />
+          <ScalarProperty Name="NoOfConfirmedRecoveriesFemale" ColumnName="NoOfConfirmedRecoveriesFemale" />
+          <ScalarProperty Name="NoOfConfirmedRecoveriesMale" ColumnName="NoOfConfirmedRecoveriesMale" />
+          <ScalarProperty Name="NoOfConfirmedInfectionsFemale" ColumnName="NoOfConfirmedInfectionsFemale" />
+          <ScalarProperty Name="NoOfConfirmedInfectionsMale" ColumnName="NoOfConfirmedInfectionsMale" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LearnersCovid19StatisticsPerGrade">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.LearnersCovid19StatisticsPerGrade">
+        <MappingFragment StoreEntitySet="LearnersCovid19StatisticsPerGrade">
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="NoOfConfirmedDeathsFemale" ColumnName="NoOfConfirmedDeathsFemale" />
+          <ScalarProperty Name="NoOfConfirmedDeathsMale" ColumnName="NoOfConfirmedDeathsMale" />
+          <ScalarProperty Name="NoOfConfirmedRecoveriesFemale" ColumnName="NoOfConfirmedRecoveriesFemale" />
+          <ScalarProperty Name="NoOfConfirmedRecoveriesMale" ColumnName="NoOfConfirmedRecoveriesMale" />
+          <ScalarProperty Name="NoOfConfirmedInfectionsFemale" ColumnName="NoOfConfirmedInfectionsFemale" />
+          <ScalarProperty Name="NoOfConfirmedInfectionsMale" ColumnName="NoOfConfirmedInfectionsMale" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StaffCovid19StatisticsPerAgeGroup">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.StaffCovid19StatisticsPerAgeGroup">
+        <MappingFragment StoreEntitySet="StaffCovid19StatisticsPerAgeGroup">
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="StaffType" ColumnName="StaffType" />
+          <ScalarProperty Name="AgeGroup" ColumnName="AgeGroup" />
+          <ScalarProperty Name="NoOfConfirmedDeathsFemale" ColumnName="NoOfConfirmedDeathsFemale" />
+          <ScalarProperty Name="NoOfConfirmedDeathsMale" ColumnName="NoOfConfirmedDeathsMale" />
+          <ScalarProperty Name="NoOfConfirmedRecoveriesFemale" ColumnName="NoOfConfirmedRecoveriesFemale" />
+          <ScalarProperty Name="NoOfConfirmedRecoveriesMale" ColumnName="NoOfConfirmedRecoveriesMale" />
+          <ScalarProperty Name="NoOfConfirmedInfectionsFemale" ColumnName="NoOfConfirmedInfectionsFemale" />
+          <ScalarProperty Name="NoOfConfirmedInfectionsMale" ColumnName="NoOfConfirmedInfectionsMale" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurriculumDelivery_ApprovedSubjects">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.CurriculumDelivery_ApprovedSubjects">
+        <MappingFragment StoreEntitySet="CurriculumDelivery_ApprovedSubjects">
+          <ScalarProperty Name="SubjectID" ColumnName="SubjectID" />
+          <ScalarProperty Name="CurriculumDeliveryID" ColumnName="CurriculumDeliveryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurriculumDelivery_DistrictSupportRecievedForLockdownLearning">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.CurriculumDelivery_DistrictSupportRecievedForLockdownLearning">
+        <MappingFragment StoreEntitySet="CurriculumDelivery_DistrictSupportRecievedForLockdownLearning">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="CurriculumDeliveryID" ColumnName="CurriculumDeliveryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurriculumDelivery_HowDidTheSchoolInformParentsAboutThePerformanceOfTheirChildren">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.CurriculumDelivery_HowDidTheSchoolInformParentsAboutThePerformanceOfTheirChildren">
+        <MappingFragment StoreEntitySet="CurriculumDelivery_HowDidTheSchoolInformParentsAboutThePerformanceOfTheirChildren">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="CurriculumDeliveryID" ColumnName="CurriculumDeliveryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurriculumDelivery_HowHasTheSchoolAssistedLockdownLearnersWithTheirAssessmentTasks">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.CurriculumDelivery_HowHasTheSchoolAssistedLockdownLearnersWithTheirAssessmentTasks">
+        <MappingFragment StoreEntitySet="CurriculumDelivery_HowHasTheSchoolAssistedLockdownLearnersWithTheirAssessmentTasks">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="CurriculumDeliveryID" ColumnName="CurriculumDeliveryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurriculumDelivery_InitiativesAvailedByTheGDEToSupportMatriculantsToCompleteTheGrade12Programme">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.CurriculumDelivery_InitiativesAvailedByTheGDEToSupportMatriculantsToCompleteTheGrade12Programme">
+        <MappingFragment StoreEntitySet="CurriculumDelivery_InitiativesAvailedByTheGDEToSupportMatriculantsToCompleteTheGrade12Programme">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="CurriculumDeliveryID" ColumnName="CurriculumDeliveryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurriculumDelivery_InitiativesAvailedByThePartnersToSupportMatriculantsToCompleteTheGrade12Programme">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.CurriculumDelivery_InitiativesAvailedByThePartnersToSupportMatriculantsToCompleteTheGrade12Programme">
+        <MappingFragment StoreEntitySet="CurriculumDelivery_InitiativesAvailedByThePartnersToSupportMatriculantsToCompleteTheGrade12Programme">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="CurriculumDeliveryID" ColumnName="CurriculumDeliveryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurriculumDelivery_InitiativesAvailedByTheSchoolToSupportMatriculantsToCompleteTheGrade12Programme">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.CurriculumDelivery_InitiativesAvailedByTheSchoolToSupportMatriculantsToCompleteTheGrade12Programme">
+        <MappingFragment StoreEntitySet="CurriculumDelivery_InitiativesAvailedByTheSchoolToSupportMatriculantsToCompleteTheGrade12Programme">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="CurriculumDeliveryID" ColumnName="CurriculumDeliveryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurriculumDelivery_LaggingBehindSchoolIntervention">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.CurriculumDelivery_LaggingBehindSchoolIntervention">
+        <MappingFragment StoreEntitySet="CurriculumDelivery_LaggingBehindSchoolIntervention">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="CurriculumDeliveryID" ColumnName="CurriculumDeliveryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurriculumDelivery_MeansToProvideGuidanceToParentsAndLearnersToFacilitateLockdownLearning">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.CurriculumDelivery_MeansToProvideGuidanceToParentsAndLearnersToFacilitateLockdownLearning">
+        <MappingFragment StoreEntitySet="CurriculumDelivery_MeansToProvideGuidanceToParentsAndLearnersToFacilitateLockdownLearning">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="CurriculumDeliveryID" ColumnName="CurriculumDeliveryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurriculumDelivery_ReachedGradesDuringLockdonLevel5">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.CurriculumDelivery_ReachedGradesDuringLockdonLevel5">
+        <MappingFragment StoreEntitySet="CurriculumDelivery_ReachedGradesDuringLockdonLevel5">
+          <ScalarProperty Name="GradeID" ColumnName="GradeID" />
+          <ScalarProperty Name="CurriculumDeliveryID" ColumnName="CurriculumDeliveryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurriculumDelivery_SeniorPhaseInitiatives">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.CurriculumDelivery_SeniorPhaseInitiatives">
+        <MappingFragment StoreEntitySet="CurriculumDelivery_SeniorPhaseInitiatives">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="CurriculumDeliveryID" ColumnName="CurriculumDeliveryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurriculumDelivery_SubjectAdvisorsSupportedTheStaff">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.CurriculumDelivery_SubjectAdvisorsSupportedTheStaff">
+        <MappingFragment StoreEntitySet="CurriculumDelivery_SubjectAdvisorsSupportedTheStaff">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="CurriculumDeliveryID" ColumnName="CurriculumDeliveryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurriculumDelivery_TeacherDevicesAreReliantOn">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.CurriculumDelivery_TeacherDevicesAreReliantOn">
+        <MappingFragment StoreEntitySet="CurriculumDelivery_TeacherDevicesAreReliantOn">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="CurriculumDeliveryID" ColumnName="CurriculumDeliveryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Grade12LevelOfCompletion">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.Grade12LevelOfCompletion">
+        <MappingFragment StoreEntitySet="Grade12LevelOfCompletion">
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EducatorResources">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.EducatorResource">
+        <MappingFragment StoreEntitySet="EducatorResources">
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="PersonallyOwned" ColumnName="PersonallyOwned" />
+          <ScalarProperty Name="ProvidedBySchool" ColumnName="ProvidedBySchool" />
+          <ScalarProperty Name="ProvidedByGDE" ColumnName="ProvidedByGDE" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurriculumDelivery_AccomodatedGradesFollowingMinistersFirstSetOfDirection">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.CurriculumDelivery_AccomodatedGradesFollowingMinistersFirstSetOfDirection">
+        <MappingFragment StoreEntitySet="CurriculumDelivery_AccomodatedGradesFollowingMinistersFirstSetOfDirection">
+          <ScalarProperty Name="GradeID" ColumnName="GradeID" />
+          <ScalarProperty Name="CurriculumDeliveryID" ColumnName="CurriculumDeliveryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurriculumDelivery_AccomodatedGradesFollowingMinistersSetOfDirection02August2020">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.CurriculumDelivery_AccomodatedGradesFollowingMinistersSetOfDirection02August2020">
+        <MappingFragment StoreEntitySet="CurriculumDelivery_AccomodatedGradesFollowingMinistersSetOfDirection02August2020">
+          <ScalarProperty Name="GradeID" ColumnName="GradeID" />
+          <ScalarProperty Name="CurriculumDeliveryID" ColumnName="CurriculumDeliveryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurriculumDelivery_AccomodatedGradesFollowingMinistersSetOfDirection07July2020">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.CurriculumDelivery_AccomodatedGradesFollowingMinistersSetOfDirection07July2020">
+        <MappingFragment StoreEntitySet="CurriculumDelivery_AccomodatedGradesFollowingMinistersSetOfDirection07July2020">
+          <ScalarProperty Name="GradeID" ColumnName="GradeID" />
+          <ScalarProperty Name="CurriculumDeliveryID" ColumnName="CurriculumDeliveryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurriculumDeliveries">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.CurriculumDelivery">
+        <MappingFragment StoreEntitySet="CurriculumDelivery">
+          <ScalarProperty Name="LaggingBehindSchoolInterventionsOther" ColumnName="LaggingBehindSchoolInterventionsOther" />
+          <ScalarProperty Name="SubjectAdvisorsSupportedTheStaffOther" ColumnName="SubjectAdvisorsSupportedTheStaffOther" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="ReasonForNotCompletingTheGrade12ProgrammeInAdvanceOfThePrelimExaminations" ColumnName="ReasonForNotCompletingTheGrade12ProgrammeInAdvanceOfThePrelimExaminations" />
+          <ScalarProperty Name="WillTheSchoolHaveCompletedTheGrade12ProgrammeInAdvanceOfThePrelimExaminations" ColumnName="WillTheSchoolHaveCompletedTheGrade12ProgrammeInAdvanceOfThePrelimExaminations" />
+          <ScalarProperty Name="CompletedRequiredNofAssesmentsGrade12ID" ColumnName="CompletedRequiredNofAssesmentsGrade12ID" />
+          <ScalarProperty Name="CompletedRequiredNofAssesmentsGrade10To11ID" ColumnName="CompletedRequiredNofAssesmentsGrade10To11ID" />
+          <ScalarProperty Name="CompletedRequiredNofAssesmentsGrade4To9ID" ColumnName="CompletedRequiredNofAssesmentsGrade4To9ID" />
+          <ScalarProperty Name="CompletedRequiredNofAssesmentsGrade1To3ID" ColumnName="CompletedRequiredNofAssesmentsGrade1To3ID" />
+          <ScalarProperty Name="NoOfLearnersBenefittedFromTheHomeLearningPacks" ColumnName="NoOfLearnersBenefittedFromTheHomeLearningPacks" />
+          <ScalarProperty Name="DoesTheSchoolEnsureThatTheParentsSubmitTheirChildrenAssessmentTasksInTime" ColumnName="DoesTheSchoolEnsureThatTheParentsSubmitTheirChildrenAssessmentTasksInTime" />
+          <ScalarProperty Name="AreTheLearnersAttendingClassAtSchoolAndThoseAtHomeAtTheSameLevelOfCompletion" ColumnName="AreTheLearnersAttendingClassAtSchoolAndThoseAtHomeAtTheSameLevelOfCompletion" />
+          <ScalarProperty Name="HasTheSchoolFollowedUpWithTheParentsOfLearnersThatFailedToSubmitTheirLearningTasks" ColumnName="HasTheSchoolFollowedUpWithTheParentsOfLearnersThatFailedToSubmitTheirLearningTasks" />
+          <ScalarProperty Name="HaveParentsPickedUpTheFortnightlyLearnerActivityPacks" ColumnName="HaveParentsPickedUpTheFortnightlyLearnerActivityPacks" />
+          <ScalarProperty Name="HasTheSchoolProvidedTheirOwnResourcesToFacilitateLockdownLearning" ColumnName="HasTheSchoolProvidedTheirOwnResourcesToFacilitateLockdownLearning" />
+          <ScalarProperty Name="HasSchoolReceivedFortnightlyLearnerActivityPacks" ColumnName="HasSchoolReceivedFortnightlyLearnerActivityPacks" />
+          <ScalarProperty Name="HaSchoolCommunicatedWithParentsRegardingAssessmentTasksExpectedFromLearners" ColumnName="HaSchoolCommunicatedWithParentsRegardingAssessmentTasksExpectedFromLearners" />
+          <ScalarProperty Name="IsTheSchoolImplementingTheRevisedATP" ColumnName="IsTheSchoolImplementingTheRevisedATP" />
+          <ScalarProperty Name="WereTerm1ReportCardsIssued" ColumnName="WereTerm1ReportCardsIssued" />
+          <ScalarProperty Name="WasTerm1AssessmentCompleted" ColumnName="WasTerm1AssessmentCompleted" />
+          <ScalarProperty Name="WasTerm1OfTheATPCompleted" ColumnName="WasTerm1OfTheATPCompleted" />
+          <ScalarProperty Name="NoOfEducatorsSuccessfullyConductedOnlineClasses" ColumnName="NoOfEducatorsSuccessfullyConductedOnlineClasses" />
+          <ScalarProperty Name="NoOfEducatorsNotTrainedToConductOnlineClasses" ColumnName="NoOfEducatorsNotTrainedToConductOnlineClasses" />
+          <ScalarProperty Name="NoOfEducatorsTrainedToConductOnlineClasses" ColumnName="NoOfEducatorsTrainedToConductOnlineClasses" />
+          <ScalarProperty Name="DidTheSchoolProvideEducatorsWithDataToEnableWiFiConnectivityWhenWorkingFromHome" ColumnName="DidTheSchoolProvideEducatorsWithDataToEnableWiFiConnectivityWhenWorkingFromHome" />
+          <ScalarProperty Name="DevicesUtilisedByEducatorsUseID" ColumnName="DevicesUtilisedByEducatorsUseID" />
+          <ScalarProperty Name="OtherDistanceLearningID" ColumnName="OtherDistanceLearningID" />
+          <ScalarProperty Name="OtherDistanceLearningDescription" ColumnName="OtherDistanceLearningDescription" />
+          <ScalarProperty Name="UseOfExternalServiceProvidersID" ColumnName="UseOfExternalServiceProvidersID" />
+          <ScalarProperty Name="HomeVisitsByTeachersID" ColumnName="HomeVisitsByTeachersID" />
+          <ScalarProperty Name="PaperBasedPackagesID" ColumnName="PaperBasedPackagesID" />
+          <ScalarProperty Name="SocialMediaForStudentTeacherInteractionID" ColumnName="SocialMediaForStudentTeacherInteractionID" />
+          <ScalarProperty Name="RadioLearningProgrammesID" ColumnName="RadioLearningProgrammesID" />
+          <ScalarProperty Name="TVBasedLessonsAndProgrammesID" ColumnName="TVBasedLessonsAndProgrammesID" />
+          <ScalarProperty Name="OnlineWithoutStudentTeacherInteractionID" ColumnName="OnlineWithoutStudentTeacherInteractionID" />
+          <ScalarProperty Name="OnlineWithStudentTeacherInteractionID" ColumnName="OnlineWithStudentTeacherInteractionID" />
+          <ScalarProperty Name="WasTheSchoolAbleToDeliverLessonsToLearnersDuringLockdownLevel5" ColumnName="WasTheSchoolAbleToDeliverLessonsToLearnersDuringLockdownLevel5" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EnablingConditions_CausesOfDisruptions">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.EnablingConditions_CausesOfDisruptions">
+        <MappingFragment StoreEntitySet="EnablingConditions_CausesOfDisruptions">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="EnablingConditionsID" ColumnName="EnablingConditionsID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EnablingConditions_HowDidTheSchoolConformToThePhysicalDistancingRequirementsClassrooms">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.EnablingConditions_HowDidTheSchoolConformToThePhysicalDistancingRequirementsClassrooms">
+        <MappingFragment StoreEntitySet="EnablingConditions_HowDidTheSchoolConformToThePhysicalDistancingRequirementsClassrooms">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="EnablingConditionsID" ColumnName="EnablingConditionsID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EnablingConditions_HowDidTheSchoolConformToThePhysicalDistancingRequirementsFurniture">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.EnablingConditions_HowDidTheSchoolConformToThePhysicalDistancingRequirementsFurniture">
+        <MappingFragment StoreEntitySet="EnablingConditions_HowDidTheSchoolConformToThePhysicalDistancingRequirementsFurniture">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="EnablingConditionsID" ColumnName="EnablingConditionsID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EnablingConditions_ReasonsForSchoolClosure">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.EnablingConditions_ReasonsForSchoolClosure">
+        <MappingFragment StoreEntitySet="EnablingConditions_ReasonsForSchoolClosure">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="EnablingConditionsID" ColumnName="EnablingConditionsID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EnablingConditions_SchoolRequirementsToComplyWithPhysicalDistance">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.EnablingConditions_SchoolRequirementsToComplyWithPhysicalDistance">
+        <MappingFragment StoreEntitySet="EnablingConditions_SchoolRequirementsToComplyWithPhysicalDistance">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="EnablingConditionsID" ColumnName="EnablingConditionsID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EnablingConditions_SchoolResponsesToLearnerTransportProgrammeChallenges">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.EnablingConditions_SchoolResponsesToLearnerTransportProgrammeChallenges">
+        <MappingFragment StoreEntitySet="EnablingConditions_SchoolResponsesToLearnerTransportProgrammeChallenges">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="EnablingConditionsID" ColumnName="EnablingConditionsID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EnablingConditions_SchoolResponsesToNutritionProgrammeChallenges">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.EnablingConditions_SchoolResponsesToNutritionProgrammeChallenges">
+        <MappingFragment StoreEntitySet="EnablingConditions_SchoolResponsesToNutritionProgrammeChallenges">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="EnablingConditionsID" ColumnName="EnablingConditionsID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EnablingConditions">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.EnablingCondition">
+        <MappingFragment StoreEntitySet="EnablingConditions">
+          <ScalarProperty Name="CausesOfDisruptionsOther" ColumnName="CausesOfDisruptionsOther" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="TotalNoOfSchoolDaysLostDueToClosure" ColumnName="TotalNoOfSchoolDaysLostDueToClosure" />
+          <ScalarProperty Name="HowManyOccassionsWasTheSchoolForcedToClose" ColumnName="HowManyOccassionsWasTheSchoolForcedToClose" />
+          <ScalarProperty Name="HasTheSchoolBeenForcedToClose" ColumnName="HasTheSchoolBeenForcedToClose" />
+          <ScalarProperty Name="HasTheSchoolBeenAffectedByDisruptions" ColumnName="HasTheSchoolBeenAffectedByDisruptions" />
+          <ScalarProperty Name="DoesTheSchoolHaveSufficientTextbooksForAllLearners" ColumnName="DoesTheSchoolHaveSufficientTextbooksForAllLearners" />
+          <ScalarProperty Name="WereLearnersAllowedToTakeHomeTheirTextbooksDuringLockdown" ColumnName="WereLearnersAllowedToTakeHomeTheirTextbooksDuringLockdown" />
+          <ScalarProperty Name="HowAreLearnersLearningFromHomeBeingFed" ColumnName="HowAreLearnersLearningFromHomeBeingFed" />
+          <ScalarProperty Name="HowAreThoseLearnersThatAreOnRotatioBeingFed" ColumnName="HowAreThoseLearnersThatAreOnRotatioBeingFed" />
+          <ScalarProperty Name="WereThereAnyChallengesExperiencedInTermsOfTheSchoolNutritionProgrammeDuringLockdown" ColumnName="WereThereAnyChallengesExperiencedInTermsOfTheSchoolNutritionProgrammeDuringLockdown" />
+          <ScalarProperty Name="AreTheSchoolLearnersSharingUtensils" ColumnName="AreTheSchoolLearnersSharingUtensils" />
+          <ScalarProperty Name="IsTheSchoolUsingDisposableUtensils" ColumnName="IsTheSchoolUsingDisposableUtensils" />
+          <ScalarProperty Name="IsThereProperCleaningOfTheUtensilsTakingPlace" ColumnName="IsThereProperCleaningOfTheUtensilsTakingPlace" />
+          <ScalarProperty Name="DoTheFoodHandlersHaveTheNecessaryPPEs" ColumnName="DoTheFoodHandlersHaveTheNecessaryPPEs" />
+          <ScalarProperty Name="HaveTheFoodHandlersBeenTrainedOnCovid19Protocols" ColumnName="HaveTheFoodHandlersBeenTrainedOnCovid19Protocols" />
+          <ScalarProperty Name="AreFeedingTimesAreBeingStaggered" ColumnName="AreFeedingTimesAreBeingStaggered" />
+          <ScalarProperty Name="IsTheFoodPreparationAreaBeingCleanedRegularly" ColumnName="IsTheFoodPreparationAreaBeingCleanedRegularly" />
+          <ScalarProperty Name="IsPhysicalDistancingBeingAppliedWhereLearnersAreBeingFed" ColumnName="IsPhysicalDistancingBeingAppliedWhereLearnersAreBeingFed" />
+          <ScalarProperty Name="IsPhysicalDistancingBeingAppliedInTheFoodPreparationArea" ColumnName="IsPhysicalDistancingBeingAppliedInTheFoodPreparationArea" />
+          <ScalarProperty Name="NoOfLearnersBenefittingFromNationalSchoolNutritionProgramme" ColumnName="NoOfLearnersBenefittingFromNationalSchoolNutritionProgramme" />
+          <ScalarProperty Name="DoesTheSchoolHaveLearnersBenefittingFromNationalSchoolNutritionProgramme" ColumnName="DoesTheSchoolHaveLearnersBenefittingFromNationalSchoolNutritionProgramme" />
+          <ScalarProperty Name="WereTheCovid19BrigadesAvailableToAssistOnTheLearnerTransportRoutes" ColumnName="WereTheCovid19BrigadesAvailableToAssistOnTheLearnerTransportRoutes" />
+          <ScalarProperty Name="IsThePhysicalDistancingRequirementsBeingObservedOnTheBuses" ColumnName="IsThePhysicalDistancingRequirementsBeingObservedOnTheBuses" />
+          <ScalarProperty Name="AreTheLearnersWearingMasksWhileOnTheBuses" ColumnName="AreTheLearnersWearingMasksWhileOnTheBuses" />
+          <ScalarProperty Name="AreTheLearnersUsingHandSanitisersBeforeEnteringTheBuses" ColumnName="AreTheLearnersUsingHandSanitisersBeforeEnteringTheBuses" />
+          <ScalarProperty Name="AreAllTheLearnersArrivingOnTime" ColumnName="AreAllTheLearnersArrivingOnTime" />
+          <ScalarProperty Name="AreAllTheLearnersBeingTransportedAsExpected" ColumnName="AreAllTheLearnersBeingTransportedAsExpected" />
+          <ScalarProperty Name="WereThereAnyChallengesExperiencedInTermsOfTheLearnerTransportProgrammeDuringTheLockdown" ColumnName="WereThereAnyChallengesExperiencedInTermsOfTheLearnerTransportProgrammeDuringTheLockdown" />
+          <ScalarProperty Name="NoOfLearnersBenefittingFromTheGDELearnerTransportProgramme" ColumnName="NoOfLearnersBenefittingFromTheGDELearnerTransportProgramme" />
+          <ScalarProperty Name="DoesTheSchoolHaveLearnersBenefittingFromTheGDELearnerTransportProgramme" ColumnName="DoesTheSchoolHaveLearnersBenefittingFromTheGDELearnerTransportProgramme" />
+          <ScalarProperty Name="HowManyOccasionsWasTheSchoolAffectedByIncidentsOfVandalism" ColumnName="HowManyOccasionsWasTheSchoolAffectedByIncidentsOfVandalism" />
+          <ScalarProperty Name="WasTheSchoolAffectedByIncidentsOfVandalism" ColumnName="WasTheSchoolAffectedByIncidentsOfVandalism" />
+          <ScalarProperty Name="WereTheClassroomsDelivered" ColumnName="WereTheClassroomsDelivered" />
+          <ScalarProperty Name="DidTheSchoolRequestAdditionalClassroomsFromTheGDE" ColumnName="DidTheSchoolRequestAdditionalClassroomsFromTheGDE" />
+          <ScalarProperty Name="WasTheFurnitureDelivered" ColumnName="WasTheFurnitureDelivered" />
+          <ScalarProperty Name="DidTheSchoolRequestAdditionalFurnitureFromTheGDE" ColumnName="DidTheSchoolRequestAdditionalFurnitureFromTheGDE" />
+          <ScalarProperty Name="DidTheSchoolHaveSufficientClassrooms" ColumnName="DidTheSchoolHaveSufficientClassrooms" />
+          <ScalarProperty Name="DoesTheSchoolHaveSecureFencing" ColumnName="DoesTheSchoolHaveSecureFencing" />
+          <ScalarProperty Name="DoesTheSchoolHaveAdequateSanitationFacilities" ColumnName="DoesTheSchoolHaveAdequateSanitationFacilities" />
+          <ScalarProperty Name="DoesTheSchoolExperienceWaterPressureIssuesRegularly" ColumnName="DoesTheSchoolExperienceWaterPressureIssuesRegularly" />
+          <ScalarProperty Name="HasTheSchoolBeenProvidedWithWater" ColumnName="HasTheSchoolBeenProvidedWithWater" />
+          <ScalarProperty Name="DoesTheSchoolHaveRunningWater" ColumnName="DoesTheSchoolHaveRunningWater" />
+          <ScalarProperty Name="HasTheSchoolBeenProvidedWithElectricity" ColumnName="HasTheSchoolBeenProvidedWithElectricity" />
+          <ScalarProperty Name="DoesTheSchoolHaveElectricity" ColumnName="DoesTheSchoolHaveElectricity" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurriculumDelivery_AccomodatedGradesFollowingMinistersFirstSetOfDirection29June2020">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.CurriculumDelivery_AccomodatedGradesFollowingMinistersFirstSetOfDirection29June2020">
+        <MappingFragment StoreEntitySet="CurriculumDelivery_AccomodatedGradesFollowingMinistersFirstSetOfDirection29June2020">
+          <ScalarProperty Name="GradeID" ColumnName="GradeID" />
+          <ScalarProperty Name="CurriculumDeliveryID" ColumnName="CurriculumDeliveryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LearnerInformations">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.LearnerInformation">
+        <MappingFragment StoreEntitySet="LearnerInformation">
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+          <ScalarProperty Name="HasThisProvenSuccessful" ColumnName="HasThisProvenSuccessful" />
+          <ScalarProperty Name="HasTherBeenFollowUpByDistrict" ColumnName="HasTherBeenFollowUpByDistrict" />
+          <ScalarProperty Name="DidTheSchoolEscalateToTheDistrict" ColumnName="DidTheSchoolEscalateToTheDistrict" />
+          <ScalarProperty Name="NoOfLearnersUnableToBeContacted" ColumnName="NoOfLearnersUnableToBeContacted" />
+          <ScalarProperty Name="NoOfLearnersWhoseParentsWereContacted" ColumnName="NoOfLearnersWhoseParentsWereContacted" />
+          <ScalarProperty Name="NoOfPotentialDropOutsContactedBySchool" ColumnName="NoOfPotentialDropOutsContactedBySchool" />
+          <ScalarProperty Name="ReviewTheDeregistrationOfLearnersByGDE" ColumnName="ReviewTheDeregistrationOfLearnersByGDE" />
+          <ScalarProperty Name="PotentialDropOutOlderThan15" ColumnName="PotentialDropOutOlderThan15" />
+          <ScalarProperty Name="PotentialDropOutBetween7And15" ColumnName="PotentialDropOutBetween7And15" />
+          <ScalarProperty Name="PotentialDropOutYoungerThan7" ColumnName="PotentialDropOutYoungerThan7" />
+          <ScalarProperty Name="NoOfLearnersApprovedForLockdownLearningDueToOtherHealthRelatedReasons" ColumnName="NoOfLearnersApprovedForLockdownLearningDueToOtherHealthRelatedReasons" />
+          <ScalarProperty Name="NoOfLearnersApprovedForLockdownLearningDueToAnxietyOrFear" ColumnName="NoOfLearnersApprovedForLockdownLearningDueToAnxietyOrFear" />
+          <ScalarProperty Name="NoOfLearnersApprovedForLockdownLearningDueToComorbidities" ColumnName="NoOfLearnersApprovedForLockdownLearningDueToComorbidities" />
+          <ScalarProperty Name="NoOfLearnersInvolvedInLockdownLearningByArrangementWithTheSchool" ColumnName="NoOfLearnersInvolvedInLockdownLearningByArrangementWithTheSchool" />
+          <ScalarProperty Name="NoOfLearnersApprovedForLockdownLearningApprovedByGDE" ColumnName="NoOfLearnersApprovedForLockdownLearningApprovedByGDE" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StaffInformationManagementOfConcessions">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.StaffInformationManagementOfConcession">
+        <MappingFragment StoreEntitySet="StaffInformationManagementOfConcessions">
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="NoOfSubstitutesReceivedStatePaid" ColumnName="NoOfSubstitutesReceivedStatePaid" />
+          <ScalarProperty Name="NoOfSubstitutesAppliedForStatePaid" ColumnName="NoOfSubstitutesAppliedForStatePaid" />
+          <ScalarProperty Name="NoOfStaffApprovedForConcessionsBasedOnUnderlyingConditionsSGBAppointed" ColumnName="NoOfStaffApprovedForConcessionsBasedOnUnderlyingConditionsSGBAppointed" />
+          <ScalarProperty Name="NoOfStaffApprovedForConcessionsBasedOnUnderlyingConditionsStatePaid" ColumnName="NoOfStaffApprovedForConcessionsBasedOnUnderlyingConditionsStatePaid" />
+          <ScalarProperty Name="NoOfStaffApprovedForConcessionsBasedOnAgeAndIllnessSGBAppointed" ColumnName="NoOfStaffApprovedForConcessionsBasedOnAgeAndIllnessSGBAppointed" />
+          <ScalarProperty Name="NoOfStaffApprovedForConcessionsBasedOnAgeAndIllnessStatePaid" ColumnName="NoOfStaffApprovedForConcessionsBasedOnAgeAndIllnessStatePaid" />
+          <ScalarProperty Name="NoOfStaffApprovedForComorbiditiesSGBAppointed" ColumnName="NoOfStaffApprovedForComorbiditiesSGBAppointed" />
+          <ScalarProperty Name="NoOfStaffApprovedForComorbiditiesStatePaid" ColumnName="NoOfStaffApprovedForComorbiditiesStatePaid" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurriculumDelivery_ModeOfDeliveryAdoptedByTheSchoolsToDeliverTheCurriculum">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.CurriculumDelivery_ModeOfDeliveryAdoptedByTheSchoolsToDeliverTheCurriculum">
+        <MappingFragment StoreEntitySet="CurriculumDelivery_ModeOfDeliveryAdoptedByTheSchoolsToDeliverTheCurriculum">
+          <ScalarProperty Name="UsageID" ColumnName="UsageID" />
+          <ScalarProperty Name="ModeOfDeliveryID" ColumnName="ModeOfDeliveryID" />
+          <ScalarProperty Name="CurriculumDeliveryID" ColumnName="CurriculumDeliveryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Schools">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.School">
+        <MappingFragment StoreEntitySet="School">
+          <ScalarProperty Name="SurveySubmittedDate" ColumnName="SurveySubmittedDate" />
+          <ScalarProperty Name="IsSurveySubmitted" ColumnName="IsSurveySubmitted" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="PrincipalEmailAddress" ColumnName="PrincipalEmailAddress" />
+          <ScalarProperty Name="SchoolEmailAddress" ColumnName="SchoolEmailAddress" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="WardNumber" ColumnName="WardNumber" />
+          <ScalarProperty Name="LocalMunicipality" ColumnName="LocalMunicipality" />
+          <ScalarProperty Name="DistrictMunicipality" ColumnName="DistrictMunicipality" />
+          <ScalarProperty Name="MainPlaceName" ColumnName="MainPlaceName" />
+          <ScalarProperty Name="SubPlaceName" ColumnName="SubPlaceName" />
+          <ScalarProperty Name="TownCity" ColumnName="TownCity" />
+          <ScalarProperty Name="Suburb" ColumnName="Suburb" />
+          <ScalarProperty Name="TownshipVillage" ColumnName="TownshipVillage" />
+          <ScalarProperty Name="StreetName" ColumnName="StreetName" />
+          <ScalarProperty Name="StreetNo" ColumnName="StreetNo" />
+          <ScalarProperty Name="NoFee" ColumnName="NoFee" />
+          <ScalarProperty Name="Quintile" ColumnName="Quintile" />
+          <ScalarProperty Name="ClusterNo" ColumnName="ClusterNo" />
+          <ScalarProperty Name="CircuitNo" ColumnName="CircuitNo" />
+          <ScalarProperty Name="Sector" ColumnName="Sector" />
+          <ScalarProperty Name="RelationWithState" ColumnName="RelationWithState" />
+          <ScalarProperty Name="TypeOfInstitution" ColumnName="TypeOfInstitution" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="InstLevelBudgetaryRequirements" ColumnName="InstLevelBudgetaryRequirements" />
+          <ScalarProperty Name="GautengReferenceNumber" ColumnName="GautengReferenceNumber" />
+          <ScalarProperty Name="DistrictCode" ColumnName="DistrictCode" />
+          <ScalarProperty Name="DistrictName" ColumnName="DistrictName" />
+          <ScalarProperty Name="PrincipalIdentityNo" ColumnName="PrincipalIdentityNo" />
+          <ScalarProperty Name="PrincipalPersalNo" ColumnName="PrincipalPersalNo" />
+          <ScalarProperty Name="PrincipalMobileNo" ColumnName="PrincipalMobileNo" />
+          <ScalarProperty Name="PrincipalName" ColumnName="PrincipalName" />
+          <ScalarProperty Name="EMISNo" ColumnName="EMISNo" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClassInformations">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.ClassInformation">
+        <MappingFragment StoreEntitySet="ClassInformation">
+          <ScalarProperty Name="WasTheSchoolAbleToAccommodatePhysicalDistancingID" ColumnName="WasTheSchoolAbleToAccommodatePhysicalDistancingID" />
+          <ScalarProperty Name="SchoolRotationApproachID" ColumnName="SchoolRotationApproachID" />
+          <ScalarProperty Name="TimetableCycleID" ColumnName="TimetableCycleID" />
+          <ScalarProperty Name="IntroducedRotationID" ColumnName="IntroducedRotationID" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="WasTheSchoolDisinfected" ColumnName="WasTheSchoolDisinfected" />
+          <ScalarProperty Name="LongestDurationTheSchoolClosedDueToCovid19" ColumnName="LongestDurationTheSchoolClosedDueToCovid19" />
+          <ScalarProperty Name="NoOfOccasionsTheSchoolClosedDueToCovid19" ColumnName="NoOfOccasionsTheSchoolClosedDueToCovid19" />
+          <ScalarProperty Name="WasTheSchoolClosedDueToCovid19" ColumnName="WasTheSchoolClosedDueToCovid19" />
+          <ScalarProperty Name="NoOfClassroomsNotUsedDueToPoorCondition" ColumnName="NoOfClassroomsNotUsedDueToPoorCondition" />
+          <ScalarProperty Name="NoOfAdditionalMobileClassroomsDelivered" ColumnName="NoOfAdditionalMobileClassroomsDelivered" />
+          <ScalarProperty Name="NoOfMobileClassroomsRequestedByTheSchool" ColumnName="NoOfMobileClassroomsRequestedByTheSchool" />
+          <ScalarProperty Name="WereAdditionalMobileClassroomsRequestedByTheSchool" ColumnName="WereAdditionalMobileClassroomsRequestedByTheSchool" />
+          <ScalarProperty Name="TotalTeachingTimeOverTheCycle" ColumnName="TotalTeachingTimeOverTheCycle" />
+          <ScalarProperty Name="HasTheSchoolAdjustedTheSchoolDayToCoverTheRegulatedHoursForCurriculumDelivery" ColumnName="HasTheSchoolAdjustedTheSchoolDayToCoverTheRegulatedHoursForCurriculumDelivery" />
+          <ScalarProperty Name="LearnerCapacityOfSchoolNormsAndStandardForSchoolInfrastructure" ColumnName="LearnerCapacityOfSchoolNormsAndStandardForSchoolInfrastructure" />
+          <ScalarProperty Name="NoOfLearnersAccommodatedForHybrid" ColumnName="NoOfLearnersAccommodatedForHybrid" />
+          <ScalarProperty Name="NoOfLearnersAccommodatedForWeeklyRotation" ColumnName="NoOfLearnersAccommodatedForWeeklyRotation" />
+          <ScalarProperty Name="NoOfLearnersAccommodatedForDailyRotation" ColumnName="NoOfLearnersAccommodatedForDailyRotation" />
+          <ScalarProperty Name="DoesTheSchoolHaveMultiGradeclasses" ColumnName="DoesTheSchoolHaveMultiGradeclasses" />
+          <ScalarProperty Name="DoesTheSchoolHaveDoubleShifts" ColumnName="DoesTheSchoolHaveDoubleShifts" />
+          <ScalarProperty Name="DoesTheSchoolPlatoon" ColumnName="DoesTheSchoolPlatoon" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StaffInformationHeadCounts">
+      <EntityTypeMapping TypeName="Covid19ImpactSurveyModel.StaffInformationHeadCount">
+        <MappingFragment StoreEntitySet="StaffInformationHeadCount">
+          <ScalarProperty Name="NoOfStaffAppliedAndNotApprovedForConcessionsSGBAppointed" ColumnName="NoOfStaffAppliedAndNotApprovedForConcessionsSGBAppointed" />
+          <ScalarProperty Name="NoOfStaffAppliedAndNotApprovedForConcessionsStatePaid" ColumnName="NoOfStaffAppliedAndNotApprovedForConcessionsStatePaid" />
+          <ScalarProperty Name="DateLogged" ColumnName="DateLogged" />
+          <ScalarProperty Name="SchoolID" ColumnName="SchoolID" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="NoOfStaffThatHaveNotReturnedAsAResulOfResignationOrRetirementSGBAppointed" ColumnName="NoOfStaffThatHaveNotReturnedAsAResulOfResignationOrRetirementSGBAppointed" />
+          <ScalarProperty Name="NoOfStaffThatHaveNotReturnedAsAResulOfResignationOrRetirementStatePaid" ColumnName="NoOfStaffThatHaveNotReturnedAsAResulOfResignationOrRetirementStatePaid" />
+          <ScalarProperty Name="NoOfStaffNotReturnedToWorkForAnyKnownReasonsSGBAppointed" ColumnName="NoOfStaffNotReturnedToWorkForAnyKnownReasonsSGBAppointed" />
+          <ScalarProperty Name="NoOfStaffNotReturnedToWorkForAnyKnownReasonsStatePaid" ColumnName="NoOfStaffNotReturnedToWorkForAnyKnownReasonsStatePaid" />
+          <ScalarProperty Name="NoOfStaffAppliedAndAwaitingApprovalForConcessionsSGBAppointed" ColumnName="NoOfStaffAppliedAndAwaitingApprovalForConcessionsSGBAppointed" />
+          <ScalarProperty Name="NoOfStaffAppliedAndAwaitingApprovalForConcessionsStatePaid" ColumnName="NoOfStaffAppliedAndAwaitingApprovalForConcessionsStatePaid" />
+          <ScalarProperty Name="NoOfStaffApprovedForConcessionsSGBAppointed" ColumnName="NoOfStaffApprovedForConcessionsSGBAppointed" />
+          <ScalarProperty Name="NoOfStaffApprovedForConcessionsStatePaid" ColumnName="NoOfStaffApprovedForConcessionsStatePaid" />
+          <ScalarProperty Name="NoOfStaffMembersReturnedSGBAppointed" ColumnName="NoOfStaffMembersReturnedSGBAppointed" />
+          <ScalarProperty Name="NoOfStaffMembersReturnedStatePaid" ColumnName="NoOfStaffMembersReturnedStatePaid" />
+          <ScalarProperty Name="TenthDayStaffCountsSGBAppointed" ColumnName="TenthDayStaffCountsSGBAppointed" />
+          <ScalarProperty Name="TenthDayStaffCountsStatePaid" ColumnName="TenthDayStaffCountsStatePaid" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

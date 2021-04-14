@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4da569b1292c436781c6c5d95d8a406c" Name="Diagram1">
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.C__MigrationHistory" Width="1.5" PointX="11.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Address" Width="1.5" PointX="9.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.ApprovalRoute" Width="1.5" PointX="15.25" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.AspNetRole" Width="1.5" PointX="7.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.AspNetUserClaim" Width="1.5" PointX="12.25" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.AspNetUserLogin" Width="1.5" PointX="12.25" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.AspNetUser" Width="1.5" PointX="10" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Circuit" Width="1.5" PointX="24.5" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.CircuitPosition" Width="1.5" PointX="26.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Cluster" Width="1.5" PointX="26.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.ClusterPosition" Width="1.5" PointX="29" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.District" Width="1.5" PointX="22.25" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.DistrictPosition" Width="1.5" PointX="24.5" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Enroll" Width="1.5" PointX="9.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.ErrorLog" Width="1.5" PointX="11.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Experience" Width="1.5" PointX="9.75" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Grade" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.GradeSubject" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Level" Width="1.5" PointX="13" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Notification" Width="1.5" PointX="12.25" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Partner" Width="1.5" PointX="13" PointY="30.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.PartnersPosition" Width="1.5" PointX="15.25" PointY="27.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Phase" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.PhaseSubject" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Position" Width="1.5" PointX="13" PointY="27.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Project" Width="1.5" PointX="0.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Province" Width="1.5" PointX="17.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.ProvincePosition" Width="1.5" PointX="20" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Qualification" Width="1.5" PointX="9.75" PointY="30.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Region" Width="1.5" PointX="20" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.RegionPosition" Width="1.5" PointX="22.25" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.ResetPassword" Width="1.5" PointX="9.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.School" Width="1.5" PointX="29" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.SchoolPosition" Width="1.5" PointX="24.5" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Session" Width="1.5" PointX="13.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Status" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Subject" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.SubjectProject" Width="1.5" PointX="3" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.sysdiagram" Width="1.5" PointX="0.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.tbl_Personal_Details" Width="1.5" PointX="2.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.TeacherPosition1" Width="1.5" PointX="4.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Trainee" Width="1.5" PointX="7.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.TraineeGradeSubject" Width="1.5" PointX="5.25" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Training" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.TrainingSchedule" Width="1.5" PointX="7.5" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.User" Width="1.5" PointX="15.25" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Venue" Width="1.5" PointX="5.25" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.VenueSchedule" Width="1.5" PointX="12.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Gender" Width="1.5" PointX="13.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Nationality" Width="1.5" PointX="6.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Race" Width="1.5" PointX="14.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeacherDevelopment1V2Model.Title" Width="1.5" PointX="14.75" PointY="13.5" IsExpanded="true" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_Addresses_Addresses" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_ApprovalRoute_Level" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_Notification_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_User_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_Circuit_District" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_CircuitPosition_Circuit" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_Cluster_Circuit" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_CircuitPosition_SchoolPosition" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_ClusterPosition_Cluster" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_School_Cluster" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_ClusterPosition_SchoolPosition" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_District_Region" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_DistrictPosition_District" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_DistrictPosition_Position" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_Enroll_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_Enroll_Trainee" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_Enroll_TrainingSchedule" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_Trainee_Experience" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_Grade_Phase" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_GradeSubject_Grade" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_GradeSubject_Subject" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_TraineeGradeSubject_GradeSubject" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_Partners_Level" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_User_Level" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_PartnersPosition_Partners" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_PartnersPosition_Position" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_PhaseSubject_Phase" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_PhaseSubject_Subject" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_Training_PhaseSubject" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_Position_User" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_ProvincePosition_Position" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_SubjectProject_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_ProvincePosition_Province" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_Region_Province" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_Qualification_Trainee" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_RegionPosition_Region" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_ResetPassword_ResetPassword" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_TrainingSchedule_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_VenueSchedule_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_SubjectProject_Subject" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_Training_SubjectProject" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_TraineeGradeSubject_Trainee" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_TrainingSchedule_Training" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_TrainingSchedule_Venue" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_VenueSchedule_TrainingSchedule" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.FK_VenueSchedule_Venue" ManuallyRouted="false" />
+        <AssociationConnector Association="TeacherDevelopment1V2Model.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
